@@ -4,4 +4,39 @@
 PresetManager:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_DefaultPresets: {}
+  m_DefaultPresets:
+  - first:
+      m_NativeTypeID: 114
+      m_ManagedTypePPtr: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
+      m_ManagedTypeFallback: 
+    second:
+    - m_Preset: {fileID: 2655988077585873504, guid: 9cdba59a64d7b014ea2182e72b8fb5c4, type: 2}
+      m_Filter: Contin_Turn
+      m_Disabled: 0
+  - first:
+      m_NativeTypeID: 114
+      m_ManagedTypePPtr: {fileID: 11500000, guid: 2213c36610e3b1c4bbf886810ed9db12, type: 3}
+      m_ManagedTypeFallback: 
+    second:
+    - m_Preset: {fileID: 2655988077585873504, guid: f0a413e677a371744970235a538d5472, type: 2}
+      m_Filter: SnapTurn
+      m_Disabled: 0
+  - first:
+      m_NativeTypeID: 114
+      m_ManagedTypePPtr: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+      m_ManagedTypeFallback: 
+    second:
+    - m_Preset: {fileID: 2655988077585873504, guid: c4bdf25a631025644a211fb348f47f9e, type: 2}
+      m_Filter: conti_move
+      m_Disabled: 0
+  - first:
+      m_NativeTypeID: 114
+      m_ManagedTypePPtr: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
+      m_ManagedTypeFallback: 
+    second:
+    - m_Preset: {fileID: 2655988077585873504, guid: add736549a8a6434fab3eda045333e2c, type: 2}
+      m_Filter: RightHand Controller
+      m_Disabled: 0
+    - m_Preset: {fileID: 2655988077585873504, guid: faa5ad7e1711a5d408ec31c40e002a8e, type: 2}
+      m_Filter: LeftHand Controller
+      m_Disabled: 0
