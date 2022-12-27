@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7652c43f70de48ec86b905805e3c7213, type: 3}
+  m_Name: LeftMenu
+  m_EditorClassIdentifier: 
+  Handednes: 0
+  UnityXRControllerButtonMappingEntries:
+  - {fileID: 3321307533130078945, guid: 1153fb5a93aac514987f6273333945e3, type: 2}
+  NewInputSystemActionFullPath: XRI LeftHand/Menu
+  NewInputSystemAction: {fileID: -6822109005528423586, guid: 494a250f06f597940b4b7342ca452446, type: 3}
+  OVRButtonName: lctrl:o_button_PLY
+  SteamVRActionFullPath: /actions/default/in/LeftMenu
+  MappingNotes: For UnityXR (legacy) only OVR will provide menu button handling.
+    Use new input / Steam VR if you have to use it

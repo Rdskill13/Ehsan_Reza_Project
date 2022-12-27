@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7652c43f70de48ec86b905805e3c7213, type: 3}
+  m_Name: LeftSecondaryButton
+  m_EditorClassIdentifier: 
+  Handednes: 0
+  UnityXRControllerButtonMappingEntries:
+  - {fileID: -3880618118442687683, guid: 1153fb5a93aac514987f6273333945e3, type: 2}
+  - {fileID: -6798550177161306319, guid: aafc29c8a22efcc4086fd310fd6526a3, type: 2}
+  - {fileID: -8921537096414244445, guid: aa641196277ec1845a22ad38b0b83f34, type: 2}
+  NewInputSystemActionFullPath: XRI LeftHand/Secondary
+  OVRButtonName: lctrl:y_button_PLY
+  SteamVRActionFullPath: /actions/default/in/LeftSecondary
+  SteamVrBoolAction:
+    actionPath: /actions/default/in/LeftSecondary
+    needsReinit: 0
+  MappingNotes: For UnityXR Vive does not provide mappings for secondary button,
+    please use New Input / SteamVR.

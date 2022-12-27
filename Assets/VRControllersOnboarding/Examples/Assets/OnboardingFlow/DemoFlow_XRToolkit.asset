@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8361328535000101650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: Press Right Primary
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 56b1c27a334864a4cbfd5f9ee4ac2b72, type: 2}
+  - {fileID: 11400000, guid: 11a29f0162063214daffad434aca053c, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9816461ae84428a4587960b0e3597be8, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: c7639ee5ac4cfee4980ed90d570859bb, type: 2}
+--- !u!114 &-6976384029066147752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: LeftTrigger
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 56b1c27a334864a4cbfd5f9ee4ac2b72, type: 2}
+  - {fileID: 11400000, guid: d8c7cb1a944c6cd41a5fb7a24b72250c, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: c65470834cf3f3c489319e3107138d59, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: bfc98eedef6683d4fb54a5599706f42e, type: 2}
+--- !u!114 &-5947962064881831004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: MoveLeftJoystick_Left
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: f748947e4ccc5d14dba03a8e7d374514, type: 2}
+  - {fileID: 11400000, guid: 33617181e45e9f1438b97b06f9413f29, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 175b33d4a54058f4bb66f3eca59e8129, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: 2a2eadfa064839a42af99502169d04b7, type: 2}
+--- !u!114 &-3072932942357402131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: Click Left Primary Button
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 56b1c27a334864a4cbfd5f9ee4ac2b72, type: 2}
+  - {fileID: 11400000, guid: f4fc3bbfe09f6024ebc26542a2623cbf, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9816461ae84428a4587960b0e3597be8, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: a1a854b391e3ffd4fa24796db81cd2d6, type: 2}
+--- !u!114 &-1702940766389815129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: Press Left Joystick
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: e36e8cb913059994e92115276d3eb7b7, type: 2}
+  - {fileID: 11400000, guid: 96e0459a2c0ec504791ad41ac68a0e79, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9816461ae84428a4587960b0e3597be8, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: 3373ef2b23737f445842d474459343ce, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b767e8ca4648f0a23c0daa87865883, type: 3}
+  m_Name: DemoFlow_XRToolkit
+  m_EditorClassIdentifier: 
+  ManualExplicitlyMarkedButtonResolution: 1
+  RemindUserAboutGuidanceIfNotCompletedAfterNSeconds: 10
+  MappingToOnboardingSetupEntries:
+  - {fileID: 1433366251431256230}
+  - {fileID: -3072932942357402131}
+  - {fileID: -1702940766389815129}
+  - {fileID: -5947962064881831004}
+  - {fileID: -8361328535000101650}
+  - {fileID: -6976384029066147752}
+  - {fileID: 3505088402822088179}
+  - {fileID: 8993930783400524920}
+  - {fileID: 6552727624168670176}
+  - {fileID: 5420814899526953034}
+  SkipOnboardingStep: {fileID: 6552727624168670176}
+  SkipTrigger: {fileID: 11400000, guid: c65470834cf3f3c489319e3107138d59, type: 2}
+--- !u!114 &1433366251431256230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55b415209dd442eb9f9ae14f5f7440b, type: 3}
+  m_Name: Display welcome Message
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 688a5631d5d34914fabc88239fdb5606, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9751c766fcbe816439d5aef518ad1bb2, type: 2}
+  SceneObjectIdentifier:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: e2f00620f20a4aa49a968ee10981e42e, type: 2}
+--- !u!114 &3505088402822088179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: LeftGrip
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 144d6345cb8b4ea43b3d085042bb6ef2, type: 2}
+  - {fileID: 11400000, guid: e36e8cb913059994e92115276d3eb7b7, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9751c766fcbe816439d5aef518ad1bb2, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: a975c501824c4d141920bf34f3244ce3, type: 2}
+--- !u!114 &5420814899526953034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55b415209dd442eb9f9ae14f5f7440b, type: 3}
+  m_Name: End screen
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 17b5ce03af5a5b041aab3ac8d6c1786b, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 910ab51dbffd71443bef6abd89ed4796, type: 2}
+  SceneObjectIdentifier:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: e2f00620f20a4aa49a968ee10981e42e, type: 2}
+--- !u!114 &6552727624168670176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: Skip
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: b60ed177305aa8343a07efd585625c44, type: 2}
+  - {fileID: 11400000, guid: 56b1c27a334864a4cbfd5f9ee4ac2b72, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 910ab51dbffd71443bef6abd89ed4796, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: a1a854b391e3ffd4fa24796db81cd2d6, type: 2}
+--- !u!114 &8815049168792737535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55b415209dd442eb9f9ae14f5f7440b, type: 3}
+  m_Name: new tst
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 0}
+  Rules:
+  - {fileID: 0}
+  SceneObjectIdentifier:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 0}
+--- !u!114 &8993930783400524920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55b415209dd442eb9f9ae14f5f7440b, type: 3}
+  m_Name: Throw Object
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: f748947e4ccc5d14dba03a8e7d374514, type: 2}
+  - {fileID: 11400000, guid: ad7ec0a9f1eed4540916b0cff0238d4c, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 2778aac91ea34994abcb4de5b5e1a288, type: 2}
+  SceneObjectIdentifier:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: da036336d524aae498b5bd762e2365f5, type: 2}

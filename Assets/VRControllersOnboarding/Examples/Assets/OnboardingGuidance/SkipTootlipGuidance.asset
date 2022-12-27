@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c17b19fdbf54b17acae0661dda4e96f, type: 3}
+  m_Name: SkipTootlipGuidance
+  m_EditorClassIdentifier: 
+  TooltipOffset: {x: -0.0020000467, y: -0.199, z: 0.037130054}
+  ControllerTooltipPrefab: {fileID: 140952, guid: 3ca7dc5aa754c5c418f6c99fec284b46, type: 3}
+  ShowTooltipToButtonConnectionAsLine: 1
+  Text: "You can configure a button which will allow user to skip onboarding at any
+    stage.\n\nIt could be useful to show that somewhere early in the onboarding process
+    \njust in case user is already familiar with controls.\n\nThis text will dissapear
+    after 20 seconds, or if you trigger 'skip' by holding the button for 3 seconds."
+  ForceWidth: 1500
+  ToggleNTimesEnabled: 0
+  ToggleNTimes: 1
+  ToggleNTimesDelay: 1

@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6183739352839192416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: RightPrimary(sandwitch button)
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 6
+  ControllerHandedness: 1
+  UnityXRControllerMappingsRoot: {fileID: 11400000}
+--- !u!114 &-5565679412071582712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: LeftTrigger
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 2
+  ControllerHandedness: 0
+  UnityXRControllerMappingsRoot: {fileID: 11400000}
+--- !u!114 &-4573146075367554290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: RightJoystickClick
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 11
+  ControllerHandedness: 1
+  UnityXRControllerMappingsRoot: {fileID: 11400000}
+--- !u!114 &-129971372847416864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: LeftJoystickMoved
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 16
+  ControllerHandedness: 0
+  UnityXRControllerMappingsRoot: {fileID: 11400000}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1605d1cbe5147e788d669b5dd494e66, type: 3}
+  m_Name: Vive (OpenVR)
+  m_EditorClassIdentifier: 
+  DeviceNameMatchingRegex: ^OpenVR.*Vive.*$
+  Mappings:
+  - {fileID: 7015152425348362854}
+  - {fileID: 2003734768152001676}
+  - {fileID: -5565679412071582712}
+  - {fileID: 4250146926254897917}
+  - {fileID: -129971372847416864}
+  - {fileID: 3375449038860020767}
+  - {fileID: 4157769087082555969}
+  - {fileID: -6183739352839192416}
+  - {fileID: 786713011536066606}
+  - {fileID: -4573146075367554290}
+--- !u!114 &786713011536066606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: LeftJoystickClick
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 11
+  ControllerHandedness: 0
+  UnityXRControllerMappingsRoot: {fileID: 11400000}
+--- !u!114 &2003734768152001676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: LeftGrip
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 3
+  ControllerHandedness: 0
+  UnityXRControllerMappingsRoot: {fileID: 11400000}
+--- !u!114 &3375449038860020767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: RightJoystickMoved
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 16
+  ControllerHandedness: 1
+  UnityXRControllerMappingsRoot: {fileID: 11400000}
+--- !u!114 &4157769087082555969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: LeftPrimary(sandwitch button)
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 6
+  ControllerHandedness: 0
+  UnityXRControllerMappingsRoot: {fileID: 11400000}
+--- !u!114 &4250146926254897917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: RightTrigger
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 2
+  ControllerHandedness: 1
+  UnityXRControllerMappingsRoot: {fileID: 11400000}
+--- !u!114 &7015152425348362854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb54c89065b4cdc95445deca3c34043, type: 3}
+  m_Name: RightGrip
+  m_EditorClassIdentifier: 
+  LegacyInputSystemButton: 3
+  ControllerHandedness: 1
+  UnityXRControllerMappingsRoot: {fileID: 11400000}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa9c3058e754cb8bcd48037cf0f7695, type: 3}
+  m_Name: UserMovedControllerIntoSpecificArea
+  m_EditorClassIdentifier: 
+  CustomSignal:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: abc2ab27d92a28c4db04f7d93e629ebc, type: 2}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c17b19fdbf54b17acae0661dda4e96f, type: 3}
+  m_Name: LeftGripTooltip
+  m_EditorClassIdentifier: 
+  TooltipOffset: {x: 0, y: 0, z: 0}
+  ControllerTooltipPrefab: {fileID: 140952, guid: 3ca7dc5aa754c5c418f6c99fec284b46, type: 3}
+  ShowTooltipToButtonConnectionAsLine: 1
+  Text: 'If you don''t want to create custom rules via code you can signal to tool
+
+    when
+    specific rule should progress - think of it as similar to how events work.
+
+
+    For
+    this step to progress you need to put either controller into the cube.
+
+
+    Or
+    if you get stuck it''ll continue after 20 seconds - that''s an example of combined
+    OR rule'
+  ForceWidth: 1500

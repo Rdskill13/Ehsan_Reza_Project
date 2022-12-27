@@ -1,0 +1,21 @@
+Features
+
+Number of Unique Meshes: 44
+
+Collision: Yes
+
+Vertex Count: 100-10000
+
+LODs: Yes
+
+Number of Materials and Material Instances: 43
+
+Number of Textures: 52
+
+Texture Resolutions: 4096*4096
+
+Supported Development Platforms:
+
+Windows: Yes
+
+Mac: Yes

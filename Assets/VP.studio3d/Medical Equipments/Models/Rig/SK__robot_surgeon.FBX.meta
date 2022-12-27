@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: d942a81fac6b36b49ac97c159c75866b
+timeCreated: 1606067687
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Arturmatur_robot_surgeon
+    100002: Bone
+    100004: Bone.001
+    100006: Bone.002
+    100008: Bone.003
+    100010: Bone.004
+    100012: Bone.005
+    100014: Bone.006
+    100016: Bone.007
+    100018: Bone.008
+    100020: Bone.009
+    100022: Bone.009_end
+    100024: Bone.010
+    100026: Bone.011
+    100028: Bone.012
+    100030: Bone.013
+    100032: Bone.014
+    100034: Bone.015
+    100036: Bone.016
+    100038: Bone.017
+    100040: Bone.018
+    100042: Bone.018_end
+    100044: Bone.019
+    100046: Bone.020
+    100048: Bone.021
+    100050: Bone.022
+    100052: Bone.023
+    100054: Bone.024
+    100056: Bone.025
+    100058: Bone.026
+    100060: Bone.027
+    100062: Bone.027_end
+    100064: Bone.028
+    100066: Bone.029
+    100068: Bone.030
+    100070: Bone.031
+    100072: Bone.032
+    100074: Bone.033
+    100076: Bone.034
+    100078: Bone.035
+    100080: Bone.036
+    100082: Bone.036_end
+    100084: Bone.037
+    100086: Bone.038
+    100088: Bone.039
+    100090: Bone.040
+    100092: Bone.040_end
+    100094: robot_surgeon_LOD0
+    100096: robot_surgeon_LOD1
+    100098: robot_surgeon_LOD2
+    100100: robot_surgeon_LOD3
+    100102: //RootNode
+    400000: Arturmatur_robot_surgeon
+    400002: Bone
+    400004: Bone.001
+    400006: Bone.002
+    400008: Bone.003
+    400010: Bone.004
+    400012: Bone.005
+    400014: Bone.006
+    400016: Bone.007
+    400018: Bone.008
+    400020: Bone.009
+    400022: Bone.009_end
+    400024: Bone.010
+    400026: Bone.011
+    400028: Bone.012
+    400030: Bone.013
+    400032: Bone.014
+    400034: Bone.015
+    400036: Bone.016
+    400038: Bone.017
+    400040: Bone.018
+    400042: Bone.018_end
+    400044: Bone.019
+    400046: Bone.020
+    400048: Bone.021
+    400050: Bone.022
+    400052: Bone.023
+    400054: Bone.024
+    400056: Bone.025
+    400058: Bone.026
+    400060: Bone.027
+    400062: Bone.027_end
+    400064: Bone.028
+    400066: Bone.029
+    400068: Bone.030
+    400070: Bone.031
+    400072: Bone.032
+    400074: Bone.033
+    400076: Bone.034
+    400078: Bone.035
+    400080: Bone.036
+    400082: Bone.036_end
+    400084: Bone.037
+    400086: Bone.038
+    400088: Bone.039
+    400090: Bone.040
+    400092: Bone.040_end
+    400094: robot_surgeon_LOD0
+    400096: robot_surgeon_LOD1
+    400098: robot_surgeon_LOD2
+    400100: robot_surgeon_LOD3
+    400102: //RootNode
+    4300000: robot_surgeon_LOD2
+    4300002: robot_surgeon_LOD1
+    4300004: robot_surgeon_LOD0
+    4300006: robot_surgeon_LOD3
+    7400000: Arturmatur_robot_surgeon|R4_1|R4_1
+    7400002: Arturmatur_robot_surgeon|R4_2|R4_2
+    7400004: Arturmatur_robot_surgeon|R4_3|R4_3
+    9500000: //RootNode
+    13700000: robot_surgeon_LOD0
+    13700002: robot_surgeon_LOD1
+    13700004: robot_surgeon_LOD2
+    13700006: robot_surgeon_LOD3
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
