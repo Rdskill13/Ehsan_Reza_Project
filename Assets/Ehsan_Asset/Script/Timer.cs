@@ -5,7 +5,7 @@ using TMPro;
 //using UnityEditorInternal;
 using UnityEngine;
 
-public class Ball : MonoBehaviour
+public class Timer : MonoBehaviour
 {
  
 
@@ -13,11 +13,12 @@ public class Ball : MonoBehaviour
     [SerializeField]private double My_FinalTime=300;
     private double My_init_time = 0;
 
-    private TextMeshProUGUI label_time;
+    [SerializeField] private TextMeshProUGUI label_time;
+
+    private Coroutine record_timer_coroutine;
 
     private void Start()
     {
-        label_time = GetComponentInChildren<TextMeshProUGUI>(); //get UI Label Element which is Childern of ball(UI Label Timer)
         label_time.gameObject.SetActive(false); //by default is must be DeActivate.
 
 
@@ -40,24 +41,15 @@ public class Ball : MonoBehaviour
 
 
 
-   
-   
-
-   
-
-    
-
-   
-
     public IEnumerator  Record_Timer() //Timer of pick up ball.
     {
-      
+        
 
             double Time_Stay = My_init_time; //Time that is takes to grab ball.
 
 
 
-            while (Time_Stay == 500)
+            while (Time_Stay <= 500)
             {
                 if (this != null) //if this ball is not Destroyed, check this Condition (used when hand want to grab ball and there is no)
                 {
@@ -73,7 +65,7 @@ public class Ball : MonoBehaviour
                 Time_Stay = Time_Stay + 1;
 
 
-            Time_Stay = Math.Round(Time_Stay, 1); //we need just one precision of  Time_Stay.
+            //Time_Stay = Math.Round(Time_Stay, 1); //we need just one precision of  Time_Stay.
 
             
 
@@ -99,7 +91,7 @@ public class Ball : MonoBehaviour
        // my_garb_sound.Play(); //grab sound must play.
 
         
-         label_time.gameObject.SetActive(false); //if Timer ends, just DeActivate it.
+         //label_time.gameObject.SetActive(false); //if Timer ends, just DeActivate it.
                                                         //   }
 
         //background_music.Play();
@@ -122,71 +114,113 @@ public class Ball : MonoBehaviour
 
 
 
-       //     TimeSpan saat = DateTime.Now.TimeOfDay; //get time when pick up ball happen.
-       //         uint hour = (uint)saat.Hours;
-       //         uint min = (uint)saat.Minutes;
-       //         uint sec = (uint)saat.Seconds;
-       //     //****
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name.Contains("XR Origin"))
 
-
-       //         for (int i = Ball_manager.index_history; i >= 1; i--) // if new record Generate, shift down all Records.
-       //         {
-       //             Ball_manager.history_lable_UI[i].text
-       //             =
-       //          Ball_manager.history_lable_UI[i - 1].text;
-       //         }
-
-       //     //    Ball_manager.history_lable_UI[0].text = //create new record and put it in zero position of array.
-       //     //"Shoulder:" + shoulder + ", Elbow:" + elbow +
-       //     //", Wrist:" + 360 + ", Hand:" + "Right" + ", State: " + "Pick";
+        {
+            Debug.Log("Trigger enter!!!");
+            activation_label(true);
 
 
 
-       //     Ball_manager.history_lable_UI[0].text = //create new record and put it in zero position of array.
-       //shoulder.ToString() + "                                " + elbow.ToString() + "                                  " + "360"
-       //+ "                                         " + "R" + "                                 " + "Pick";
+            record_timer_coroutine = StartCoroutine(Record_Timer());
 
-       //     Ball_manager.index_history++; //each new Record generate, index_history must increase.
+        }
 
 
-       //     time_that_PickUp = Math.Round(Time.time , 1); //Time  the Ball grabbed.
+    }
 
-       //     //double diff_pickup_start = Math.Round(time_that_PickUp - Ball_manager.time_start_objective_current_ball
-       //     //                                                        - Ball_manager.time_setup_scenario, 1);
 
-       //     double diff_pickup_start = Math.Round(time_that_PickUp - Ball_manager.time_start_objective_current_ball
-       //                                                             , 1); //delta t1
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name.Contains("XR Origin"))
 
-       //     //**Write to CSV file **
-       //     WriteToCSV.write_record(Get_UserName.user_name, shoulder, elbow, "360", "Right", "Pick", hour + ":" + min + ":" + sec
-       //             , diff_pickup_start.ToString(),"--"
-       //             ,(Ball_manager.My_Scenario.Next_Scenario-1).ToString()
-       //              , this.num_clock
-       //             ,"--");
-
+        {
+            activation_label(false);
+            StopCoroutine(record_timer_coroutine);
             
 
 
-           
-
-          
-
+        }
+    }
 
 
+    private void activation_label(bool active)
+    {
+        label_time.gameObject.SetActive(active);
+
+
+    }
+
+
+
+
+    //     TimeSpan saat = DateTime.Now.TimeOfDay; //get time when pick up ball happen.
+    //         uint hour = (uint)saat.Hours;
+    //         uint min = (uint)saat.Minutes;
+    //         uint sec = (uint)saat.Seconds;
+    //     //****
+
+
+    //         for (int i = Ball_manager.index_history; i >= 1; i--) // if new record Generate, shift down all Records.
+    //         {
+    //             Ball_manager.history_lable_UI[i].text
+    //             =
+    //          Ball_manager.history_lable_UI[i - 1].text;
+    //         }
+
+    //     //    Ball_manager.history_lable_UI[0].text = //create new record and put it in zero position of array.
+    //     //"Shoulder:" + shoulder + ", Elbow:" + elbow +
+    //     //", Wrist:" + 360 + ", Hand:" + "Right" + ", State: " + "Pick";
+
+
+
+    //     Ball_manager.history_lable_UI[0].text = //create new record and put it in zero position of array.
+    //shoulder.ToString() + "                                " + elbow.ToString() + "                                  " + "360"
+    //+ "                                         " + "R" + "                                 " + "Pick";
+
+    //     Ball_manager.index_history++; //each new Record generate, index_history must increase.
+
+
+    //     time_that_PickUp = Math.Round(Time.time , 1); //Time  the Ball grabbed.
+
+    //     //double diff_pickup_start = Math.Round(time_that_PickUp - Ball_manager.time_start_objective_current_ball
+    //     //                                                        - Ball_manager.time_setup_scenario, 1);
+
+    //     double diff_pickup_start = Math.Round(time_that_PickUp - Ball_manager.time_start_objective_current_ball
+    //                                                             , 1); //delta t1
+
+    //     //**Write to CSV file **
+    //     WriteToCSV.write_record(Get_UserName.user_name, shoulder, elbow, "360", "Right", "Pick", hour + ":" + min + ":" + sec
+    //             , diff_pickup_start.ToString(),"--"
+    //             ,(Ball_manager.My_Scenario.Next_Scenario-1).ToString()
+    //              , this.num_clock
+    //             ,"--");
 
 
 
 
 
 
-        
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     //public    void score() //Scoreing mechanism, for example when ball is in clock 5 or 7, it has 1 Score, if he puts it, into basket.
     //{
-       
-       
+
+
 
     //    switch (Mathf.RoundToInt(float.Parse(num_clock)).ToString())
     //    {
@@ -205,14 +239,14 @@ public class Ball : MonoBehaviour
     //          //  Ball_Score = 30;
     //            break;
 
-            
+
     //        case "2":
     //        case "10":
     //          //  Ball_Score = 40;
     //            break;
     //        case "1":
     //        case "11":
-            
+
     //           // Ball_Score = 50;
     //            break;
 
@@ -269,14 +303,14 @@ public class Ball : MonoBehaviour
 
     //    }
 
-        
+
     //}
 
-    
 
 
 
-    
+
+
     //private void OnMouseDrag()
     //{
 
