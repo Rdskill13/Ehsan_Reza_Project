@@ -86,6 +86,10 @@ public class TeleportationManager : MonoBehaviour
 
     private void OnTeleportActivate(InputAction.CallbackContext context)
     {
+        if (MyRayInteractor == null)
+        {
+            return;
+        }
 
         if (Myactivate.IsPressed())
         {

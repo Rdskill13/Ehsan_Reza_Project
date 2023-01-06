@@ -12,6 +12,7 @@ public class MainMenu_Manager : MonoBehaviour
     }
     public void enter_MenuScene()
     {
+        Debug.Log("ASSASAS");
         //0 MenuScene
         SceneManager.LoadScene(0);
     }
