@@ -1,5 +1,75 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!136 &1297954183251343415
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3316239255661312795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.1
+  m_Direction: 0
+  m_Center: {x: -0.06, y: 0, z: 0}
+--- !u!136 &2582685666972988219
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783543155525771322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.1
+  m_Direction: 0
+  m_Center: {x: -0.06, y: 0, z: 0}
+--- !u!136 &2208093293577271749
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3705977242374211519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.1
+  m_Direction: 0
+  m_Center: {x: -0.09, y: 0, z: 0}
+--- !u!136 &337922750642675292
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8796985698606105458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.1
+  m_Direction: 0
+  m_Center: {x: -0.06, y: 0, z: 0}
+--- !u!136 &7745853380879303841
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4505100640487923258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.1
+  m_Direction: 0
+  m_Center: {x: -0.06, y: 0, z: 0}
 --- !u!1001 &2779321657394421093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53,7 +123,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 365029814c5f39546a5f4c6182774093, type: 3}
       propertyPath: m_Name
-      value: OculusHand_L
+      value: OculusHand_L Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 365029814c5f39546a5f4c6182774093, type: 3}
+--- !u!1 &3316239255661312795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 619108996110788222, guid: 365029814c5f39546a5f4c6182774093, type: 3}
+  m_PrefabInstance: {fileID: 2779321657394421093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6783543155525771322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -526394639344845473, guid: 365029814c5f39546a5f4c6182774093, type: 3}
+  m_PrefabInstance: {fileID: 2779321657394421093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3705977242374211519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1584252188948880090, guid: 365029814c5f39546a5f4c6182774093, type: 3}
+  m_PrefabInstance: {fileID: 2779321657394421093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8796985698606105458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6667308424898846231, guid: 365029814c5f39546a5f4c6182774093, type: 3}
+  m_PrefabInstance: {fileID: 2779321657394421093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4505100640487923258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1735987554494284639, guid: 365029814c5f39546a5f4c6182774093, type: 3}
+  m_PrefabInstance: {fileID: 2779321657394421093}
+  m_PrefabAsset: {fileID: 0}

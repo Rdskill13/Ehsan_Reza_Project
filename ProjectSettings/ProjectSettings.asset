@@ -579,7 +579,8 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    7: UIKIT_XR_INTERACTION;UNITY_CCU;CURVEDUI_UNITY_XR;CURVEDUI_TMP
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
