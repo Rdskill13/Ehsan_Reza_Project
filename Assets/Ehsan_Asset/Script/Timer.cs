@@ -5,6 +5,7 @@ using TMPro;
 //using UnityEditorInternal;
 using UnityEngine;
 
+
 public class Timer : MonoBehaviour
 {
  
@@ -17,25 +18,58 @@ public class Timer : MonoBehaviour
 
     private Coroutine record_timer_coroutine;
 
+
+
+
+
+    [SerializeField]private Transform MyCamera;
+
+    private Vector3 [] head_movment_rot =  new Vector3[2];
+    private Vector3[] head_movment_pos = new Vector3[2];
+
+
+    private bool is_first30 = true;
+
+    private uint Score = 0;
+
+    [SerializeField]private TextMeshProUGUI label_Score;
+
     private void Start()
     {
         label_time.gameObject.SetActive(false); //by default is must be DeActivate.
 
 
 
-       // my_beep_sound = GameObject.FindGameObjectWithTag("Beep_sound").GetComponent<AudioSource>();
+        // my_beep_sound = GameObject.FindGameObjectWithTag("Beep_sound").GetComponent<AudioSource>();
 
-       // my_garb_sound = GameObject.FindGameObjectWithTag("Grab_sound").GetComponent<AudioSource>();
-
-
-       // can_beep = true; //value of beep_sound 
-       // can_beep_basket = true;
+        // my_garb_sound = GameObject.FindGameObjectWithTag("Grab_sound").GetComponent<AudioSource>();
 
 
-       
+        // can_beep = true; //value of beep_sound 
+        // can_beep_basket = true;
 
 
-    
+        //first transform is prrvious 
+        //second transform is current
+
+
+        //  head_movment = new Transform[2];
+
+
+
+
+        head_movment_rot[0].x = MyCamera.localEulerAngles.x;
+        head_movment_rot[0].y = MyCamera.localEulerAngles.y;
+        head_movment_rot[0].z = MyCamera.localEulerAngles.z;
+
+
+
+        head_movment_pos[0].x = MyCamera.localPosition.x;
+        head_movment_pos[0].y = MyCamera.localPosition.y;
+        head_movment_pos[0].z = MyCamera.localPosition.z;
+
+
+
 
     }
 
@@ -49,7 +83,7 @@ public class Timer : MonoBehaviour
 
 
 
-            while (Time_Stay <= 500)
+            while (Time_Stay <= My_FinalTime)
             {
                 if (this != null) //if this ball is not Destroyed, check this Condition (used when hand want to grab ball and there is no)
                 {
@@ -59,6 +93,13 @@ public class Timer : MonoBehaviour
                    
 
                 }
+
+               if (Time_Stay%10==0 && Time_Stay !=0)
+              {
+                
+                check_movement_head(8.0f);
+
+              }
 
 
                 
@@ -86,16 +127,16 @@ public class Timer : MonoBehaviour
 
             }
 
-       // my_beep_sound.Stop(); //when time of grab finished, beep_sound must stoped.
+        // my_beep_sound.Stop(); //when time of grab finished, beep_sound must stoped.
 
-       // my_garb_sound.Play(); //grab sound must play.
+        // my_garb_sound.Play(); //grab sound must play.
 
-        
-         //label_time.gameObject.SetActive(false); //if Timer ends, just DeActivate it.
-                                                        //   }
+
+        //label_time.gameObject.SetActive(false); //if Timer ends, just DeActivate it.
+        //   }
 
         //background_music.Play();
-       // background_music.volume = 1.0f;
+        // background_music.volume = 1.0f;
 
 
         //if (this == null)
@@ -104,12 +145,12 @@ public class Timer : MonoBehaviour
         //}
         // if (this!=null)
         // {
-      
 
 
+        activation_label(false);
 
-            
-            }
+
+    }
 
 
 
@@ -149,6 +190,52 @@ public class Timer : MonoBehaviour
     private void activation_label(bool active)
     {
         label_time.gameObject.SetActive(active);
+
+
+    }
+
+
+    private void check_movement_head(float threshold)
+    {
+        if (is_first30)
+        {
+            head_movment_rot[0] = new Vector3(MyCamera.localEulerAngles.x, MyCamera.localEulerAngles.y, MyCamera.localEulerAngles.z);
+
+            is_first30 = !is_first30;
+
+        }
+        else
+        {
+            head_movment_rot[1] = new Vector3(MyCamera.localEulerAngles.x, MyCamera.localEulerAngles.y, MyCamera.localEulerAngles.z);
+
+            is_first30 = !is_first30;
+
+
+
+            
+
+
+        }
+
+        if (    Mathf.Abs(head_movment_rot[1].x - head_movment_rot[0].x) < threshold &&
+                Mathf.Abs(head_movment_rot[1].y - head_movment_rot[0].y) < threshold &&
+                Mathf.Abs(head_movment_rot[1].z - head_movment_rot[0].z) < threshold)
+        {
+            if (Mathf.Abs(head_movment_pos[1].x - head_movment_pos[0].x) < 0.4f &&
+               Mathf.Abs(head_movment_pos[1].y - head_movment_pos[0].y) < 0.4f &&
+               Mathf.Abs(head_movment_pos[1].z - head_movment_pos[0].z) < 0.4f)
+            {
+
+
+                Score++;
+
+                label_Score.text = "امتیاز:" + Score.ToString();
+            }
+
+        }
+
+
+
 
 
     }
