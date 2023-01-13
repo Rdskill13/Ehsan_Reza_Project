@@ -28,7 +28,7 @@ public class VideoManager : MonoBehaviour
 
         myVideo.loopPointReached += MyVideo_loopPointReached;
 
-        //wholeWorld.SetActive(false);
+        wholeWorld.SetActive(false);
 
     }
 
