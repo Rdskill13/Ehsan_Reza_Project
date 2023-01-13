@@ -1245,6 +1245,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "KeyBoard",
+            "id": "26453387-d98e-4948-8f48-195e352f2792",
+            "actions": [
+                {
+                    "name": "MyEscape",
+                    "type": "Button",
+                    "id": "f5a6c5be-e41b-4b77-b568-48b5fef82f88",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bc9fd413-afe4-41da-a842-fe751f8b38f8",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "MyEscape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

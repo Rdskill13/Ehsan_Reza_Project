@@ -86,10 +86,10 @@ public class TeleportationManager : MonoBehaviour
 
     private void OnTeleportActivate(InputAction.CallbackContext context)
     {
-        if (MyRayInteractor == null)
-        {
-            return;
-        }
+        //if (MyRayInteractor == null)
+        //{
+        //    return;
+        //}
 
         if (Myactivate.IsPressed())
         {
@@ -125,5 +125,10 @@ public class TeleportationManager : MonoBehaviour
     private void Activate_Deactivate_teleportation(bool state)
     {
         MyTeleportationMain_placement.gameObject.SetActive(state);
+    }
+
+    private void OnDisable()
+    {
+        Myactivate.performed -= OnTeleportActivate;
     }
 }

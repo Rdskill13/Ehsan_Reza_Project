@@ -132,6 +132,8 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 4043346491245626748, guid: c47ecaec36d238447b23cc8c3b3afb33, type: 2}
   - {fileID: 11400000, guid: 5131d71ebb0b8d343905a5d9ffdd4147, type: 2}
   - {fileID: 0}
@@ -678,7 +680,9 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
+    1: UNITY_CCU;CURVEDUI_UNITY_XR;CURVEDUI_TMP
     7: UIKIT_XR_INTERACTION;UNITY_CCU;CURVEDUI_UNITY_XR;CURVEDUI_TMP
+    13: UNITY_CCU;CURVEDUI_UNITY_XR;CURVEDUI_TMP
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
