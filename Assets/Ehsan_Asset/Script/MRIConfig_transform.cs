@@ -11,13 +11,18 @@ public class MRIConfig_transform : BaseTeleportationInteractable
 
     //*********** this is my code
     [SerializeField] private bool Under_MRI = false;
-    [SerializeField] private Transform MRI_Pos_Rot;
+    [SerializeField] private  Transform MRI_Pos_Rot;
 
 
     [SerializeField] private GameObject MyteleportationMainPlacement;
 
     [SerializeField] private AudioSource MRAudio;
     //***********
+
+
+    //[SerializeField] private Transform camera_transform;
+
+    [SerializeField] private Transform XROrigin_transform;
 
     /// <summary>
     /// The <see cref="Transform"/> that represents the teleportation destination.
@@ -67,7 +72,8 @@ public class MRIConfig_transform : BaseTeleportationInteractable
 
         if (Under_MRI)
         {
-            teleportRequest.destinationPosition = MRI_Pos_Rot.position;
+            teleportRequest.destinationPosition = new Vector3 (MRI_Pos_Rot.position.x, 0.8f - Camera.main.transform.localPosition.y, MRI_Pos_Rot.position.z);
+
             teleportRequest.destinationRotation = MRI_Pos_Rot.rotation;
 
             MRAudio.Play();
@@ -84,6 +90,17 @@ public class MRIConfig_transform : BaseTeleportationInteractable
         MyteleportationMainPlacement.gameObject.SetActive(false);
         return true;
     }
+
+    //protected override void OnSelectEntered(SelectEnterEventArgs args)
+    //{
+    //    XROrigin_transform.localPosition = new Vector3(XROrigin_transform.localPosition.x, 0.8f - camera_transform.localPosition.y, XROrigin_transform.localPosition.z);
+
+
+    //    Camera.main.transform
+    //    base.OnSelectEntered(args);
+
+        
+    //}
 }
   
 
