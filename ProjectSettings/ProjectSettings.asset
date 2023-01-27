@@ -134,9 +134,10 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: e6f34e5ae8736324480bccdd3218cef2, type: 2}
   - {fileID: 4043346491245626748, guid: c47ecaec36d238447b23cc8c3b3afb33, type: 2}
   - {fileID: 11400000, guid: 5131d71ebb0b8d343905a5d9ffdd4147, type: 2}
-  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -238,29 +239,29 @@ PlayerSettings:
   templateDefaultScene: Assets/Scenes/SampleScene.unity
   useCustomMainManifest: 0
   useCustomLauncherManifest: 0
-  useCustomMainGradleTemplate: 0
+  useCustomMainGradleTemplate: 1
   useCustomLauncherGradleManifest: 0
   useCustomBaseGradleTemplate: 0
-  useCustomGradlePropertiesTemplate: 0
+  useCustomGradlePropertiesTemplate: 1
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/user/Downloads/key/MY_Key_ehsan.keystore
+  AndroidKeyaliasName: ehsan
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  AndroidMinifyWithR8: 0
+  AndroidMinifyWithR8: 1
   AndroidMinifyRelease: 0
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
@@ -681,7 +682,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     1: UNITY_CCU;CURVEDUI_UNITY_XR;CURVEDUI_TMP
-    7: UIKIT_XR_INTERACTION;UNITY_CCU;CURVEDUI_UNITY_XR;CURVEDUI_TMP
+    7: UIKIT_XR_INTERACTION;UNITY_CCU;CURVEDUI_UNITY_XR;CURVEDUI_TMP;VRControllersOnboarding_Integrations_XRToolkit
     13: UNITY_CCU;CURVEDUI_UNITY_XR;CURVEDUI_TMP
   additionalCompilerArguments: {}
   platformArchitecture: {}

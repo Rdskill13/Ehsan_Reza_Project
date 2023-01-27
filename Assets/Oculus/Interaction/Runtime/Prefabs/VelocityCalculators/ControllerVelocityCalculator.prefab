@@ -58,6 +58,7 @@ MonoBehaviour:
   _filterProps:
     _minCutoff: 1
     _beta: 0
+    _dCutoff: 1
 --- !u!114 &3859188813232032366
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,7 +33,10 @@ public class Timer : MonoBehaviour
     private uint Score = 0;
 
     [SerializeField]private TextMeshProUGUI label_Score;
+    [SerializeField] private TextMeshProUGUI label_Score_2;
 
+    [SerializeField] private AudioSource Pos_feedback;
+    [SerializeField] private AudioSource Neg_feedback;
     private void Start()
     {
         label_time.gameObject.SetActive(false); //by default is must be DeActivate.
@@ -70,6 +73,12 @@ public class Timer : MonoBehaviour
 
 
 
+        Activate_Posfeedback(false);
+        Activate_Negfeedback(false);
+
+
+
+        label_Score_2.gameObject.SetActive(false);
 
     }
 
@@ -148,6 +157,7 @@ public class Timer : MonoBehaviour
 
 
         activation_label(false);
+        make_active_deactive_Score_UI_center();
 
 
     }
@@ -180,7 +190,8 @@ public class Timer : MonoBehaviour
         {
             activation_label(false);
             StopCoroutine(record_timer_coroutine);
-            
+
+            make_active_deactive_Score_UI_center();
 
 
         }
@@ -230,8 +241,20 @@ public class Timer : MonoBehaviour
                 Score++;
 
                 label_Score.text = "امتیاز:" + Score.ToString();
+                label_Score_2.text = "امتیاز:" + Score.ToString();
+
+                Activate_Posfeedback(true);
             }
 
+            else
+            {
+                Activate_Negfeedback(true);
+            }
+
+        }
+        else
+        {
+            Activate_Negfeedback(true);
         }
 
 
@@ -240,6 +263,74 @@ public class Timer : MonoBehaviour
 
     }
 
+
+    private void Activate_Posfeedback(bool is_active)
+    { 
+        Pos_feedback.gameObject.SetActive(is_active);
+        Pos_feedback.Play();
+
+        StartCoroutine(hide_UI_pos_neg());
+    }
+    private void Activate_Negfeedback(bool is_active)
+    { 
+        Neg_feedback.gameObject.SetActive(is_active);
+        Neg_feedback.Play();
+        StartCoroutine(hide_UI_pos_neg());
+    }
+
+    public IEnumerator hide_UI_pos_neg()
+    {
+
+        double Time_Stay = 0; //Time that is takes to grab ball.
+
+
+
+        while (Time_Stay <= 5)
+        {
+
+
+
+
+            Time_Stay = Time_Stay + 1;
+
+            yield return new WaitForSeconds(1.0f); //just wait 0.1 second.
+
+        }
+
+
+        if (Pos_feedback.isActiveAndEnabled)
+        {
+            Pos_feedback.gameObject.SetActive(false);
+        }
+        else
+        {
+           Neg_feedback.gameObject.SetActive(false);
+
+        }
+
+    }
+
+   
+
+    private void make_active_deactive_Score_UI_center()
+    {
+
+       // label_Score_2.text = label_Score.text;
+
+
+        if (label_Score_2.gameObject.activeInHierarchy)
+        {
+            label_Score_2.gameObject.SetActive(false);
+        }
+        else
+        {
+            label_Score_2.gameObject.SetActive(true);
+            label_Score.gameObject.SetActive(false);
+
+        }
+
+
+    }
 
 
 

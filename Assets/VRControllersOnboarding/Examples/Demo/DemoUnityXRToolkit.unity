@@ -537,7 +537,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 1
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -2278,7 +2278,7 @@ MonoBehaviour:
       m_Name: Directional Anchor Rotation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: b241db14-5abe-4a1f-8a75-791aefe8b5fc
+      m_Id: 534c4fea-6264-4adb-93f0-62c9944af70f
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3076,7 +3076,7 @@ MonoBehaviour:
       m_Name: Directional Anchor Rotation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: bbd0e5ec-3746-4f8f-974d-3ad240e89595
+      m_Id: 6051ffa9-7d43-4bf3-8629-b7134720f955
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3744,7 +3744,7 @@ MonoBehaviour:
       m_Name: Directional Anchor Rotation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 4c6f8aba-3972-4f14-b205-074cf2e8b474
+      m_Id: 9c3fe4ad-bfd6-44e3-bd36-5648787bd7b4
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []

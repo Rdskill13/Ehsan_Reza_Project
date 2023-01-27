@@ -22,6 +22,3 @@ MonoBehaviour:
     step is configured to progress either after 20 seconds OR once the user places
     any controller into cube that they can see on screen.'
   ForceWidth: 3500
-  ToggleNTimesEnabled: 1
-  ToggleNTimes: 1
-  ToggleNTimesDelay: 1
