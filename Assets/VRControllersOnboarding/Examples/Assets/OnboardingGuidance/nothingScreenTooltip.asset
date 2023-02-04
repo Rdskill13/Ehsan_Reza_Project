@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c17b19fdbf54b17acae0661dda4e96f, type: 3}
-  m_Name: RightTriggerTooltip
+  m_Name: nothingScreenTooltip
   m_EditorClassIdentifier: 
   TooltipOffset: {x: 0, y: 0, z: 0}
   ControllerTooltipPrefab: {fileID: 140952, guid: 3ca7dc5aa754c5c418f6c99fec284b46, type: 3}
   ShowTooltipToButtonConnectionAsLine: 1
-  Text: 'For activating Ray,
-
-    Press Right Trigger'
+  Text: 
   ForceWidth: 0

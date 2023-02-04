@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78bb465de1a74eab88f04f7b5aec0c81, type: 3}
-  m_Name: ContinuePastWelcomeScreen
+  m_Script: {fileID: 11500000, guid: 3f991812895a4e60994fa68324d2355e, type: 3}
+  m_Name: ButtonHeld
   m_EditorClassIdentifier: 
-  AnyOfCompletionRules:
-  - {fileID: 11400000, guid: 96806f8db46cdd049a8ba6146422525a, type: 2}
-  - {fileID: 11400000, guid: b2af58073150111498af7e0608626677, type: 2}
+  HoldForNSecondsToTrigger: 0

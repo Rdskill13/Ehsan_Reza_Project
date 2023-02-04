@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8361328535000101650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: hide_setting
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 56b1c27a334864a4cbfd5f9ee4ac2b72, type: 2}
+  - {fileID: 11400000, guid: f0b73853f777538499d9a0cd1c18e6e2, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9816461ae84428a4587960b0e3597be8, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: c7639ee5ac4cfee4980ed90d570859bb, type: 2}
+--- !u!114 &-7231055776086659358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: 'Turn '
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 56b1c27a334864a4cbfd5f9ee4ac2b72, type: 2}
+  - {fileID: 11400000, guid: f374727470fab314e82f83c54da3a757, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 175b33d4a54058f4bb66f3eca59e8129, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: 2a6c4d39ed5c98743bedc4334d7b2593, type: 2}
+--- !u!114 &-6590050957482371541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55b415209dd442eb9f9ae14f5f7440b, type: 3}
+  m_Name: TimePass
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 3e761993c4045bb4183909779961f492, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 4bd05211630d0b24c991645346292d1d, type: 2}
+  SceneObjectIdentifier:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: e2f00620f20a4aa49a968ee10981e42e, type: 2}
+--- !u!114 &-5947962064881831004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: Setting_Menu
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: f748947e4ccc5d14dba03a8e7d374514, type: 2}
+  - {fileID: 11400000, guid: df437d89fb2a05f4d83680fcac136de8, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9816461ae84428a4587960b0e3597be8, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: c7639ee5ac4cfee4980ed90d570859bb, type: 2}
+--- !u!114 &-3072932942357402131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: Right Trigger button teleportation
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 56b1c27a334864a4cbfd5f9ee4ac2b72, type: 2}
+  - {fileID: 11400000, guid: b2deadb07634c8241891f620d8072620, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: b6eaf10aed32fcb46b7f865747367eaa, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: f0aabe3791e381c4da1793460f875335, type: 2}
+--- !u!114 &-1702940766389815129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: Press Right Activate
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: e36e8cb913059994e92115276d3eb7b7, type: 2}
+  - {fileID: 11400000, guid: 845cedfef294dd74e90d00978c6b4f45, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9816461ae84428a4587960b0e3597be8, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: 36b9b072f3b44c343b3b80409a868404, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b767e8ca4648f0a23c0daa87865883, type: 3}
+  m_Name: Tut_Game
+  m_EditorClassIdentifier: 
+  ManualExplicitlyMarkedButtonResolution: 1
+  RemindUserAboutGuidanceIfNotCompletedAfterNSeconds: 10
+  MappingToOnboardingSetupEntries:
+  - {fileID: 1433366251431256230}
+  - {fileID: -7231055776086659358}
+  - {fileID: -3072932942357402131}
+  - {fileID: -1702940766389815129}
+  - {fileID: -5947962064881831004}
+  - {fileID: -6590050957482371541}
+  - {fileID: -8361328535000101650}
+  - {fileID: 6552727624168670176}
+  - {fileID: 5420814899526953034}
+  SkipOnboardingStep: {fileID: 6552727624168670176}
+  SkipTrigger: {fileID: 11400000, guid: c65470834cf3f3c489319e3107138d59, type: 2}
+--- !u!114 &1433366251431256230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55b415209dd442eb9f9ae14f5f7440b, type: 3}
+  m_Name: Display welcome Message
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: dda3ce7e038830d4895e81d449aaff27, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9751c766fcbe816439d5aef518ad1bb2, type: 2}
+  SceneObjectIdentifier:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: e2f00620f20a4aa49a968ee10981e42e, type: 2}
+--- !u!114 &5420814899526953034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55b415209dd442eb9f9ae14f5f7440b, type: 3}
+  m_Name: End screen
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 17b5ce03af5a5b041aab3ac8d6c1786b, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 96806f8db46cdd049a8ba6146422525a, type: 2}
+  SceneObjectIdentifier:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: e2f00620f20a4aa49a968ee10981e42e, type: 2}
+--- !u!114 &6552727624168670176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
+  m_Name: Skip
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 11400000, guid: 56b1c27a334864a4cbfd5f9ee4ac2b72, type: 2}
+  Rules:
+  - {fileID: 11400000, guid: 9816461ae84428a4587960b0e3597be8, type: 2}
+  ControllerButtonMappingSet: {fileID: 11400000, guid: a1a854b391e3ffd4fa24796db81cd2d6, type: 2}
+--- !u!114 &8815049168792737535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55b415209dd442eb9f9ae14f5f7440b, type: 3}
+  m_Name: new tst
+  m_EditorClassIdentifier: 
+  Guidances:
+  - {fileID: 0}
+  Rules:
+  - {fileID: 0}
+  SceneObjectIdentifier:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 0}

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c17b19fdbf54b17acae0661dda4e96f, type: 3}
-  m_Name: RightTriggerTooltip
+  m_Name: TootlipGuidance_Setting_hide
   m_EditorClassIdentifier: 
-  TooltipOffset: {x: 0, y: 0, z: 0}
+  TooltipOffset: {x: -0.014, y: 0.185, z: 0.03913007}
   ControllerTooltipPrefab: {fileID: 140952, guid: 3ca7dc5aa754c5c418f6c99fec284b46, type: 3}
   ShowTooltipToButtonConnectionAsLine: 1
-  Text: 'For activating Ray,
+  Text: 'press  Primary Button of Right controller again for hiding  menu.
 
-    Press Right Trigger'
-  ForceWidth: 0
+'
+  ForceWidth: 1500

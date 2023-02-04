@@ -15,13 +15,5 @@ MonoBehaviour:
   TooltipOffset: {x: 0, y: 0, z: 0}
   ControllerTooltipPrefab: {fileID: 140952, guid: 3ca7dc5aa754c5c418f6c99fec284b46, type: 3}
   ShowTooltipToButtonConnectionAsLine: 1
-  Text: 'Now the onboarding workflow is nearly finished.
-
-
-    Go ahead and try to
-    adjust existing flow or create brand new ones!
-
-
-    This screen will dissapear
-    after 20 seconds and workflow will complete.'
+  Text: "OnBoarding process is finished ....\n           enjoy the game "
   ForceWidth: 0

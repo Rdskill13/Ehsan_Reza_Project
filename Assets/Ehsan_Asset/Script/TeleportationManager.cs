@@ -93,6 +93,7 @@ public class TeleportationManager : MonoBehaviour
 
         if (Myactivate.IsPressed())
         {
+            
             MyRayInteractor.enabled = true;
 
             _isActive = true;
