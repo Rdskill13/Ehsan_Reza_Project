@@ -22,7 +22,9 @@ public class VideoManager : MonoBehaviour
 
         myVideo = GetComponent<VideoPlayer>();
 
-        escape_keyboard = MyactionAsset.FindActionMap("KeyBoard").FindAction("MyEscape");
+        //escape_keyboard = MyactionAsset.FindActionMap("KeyBoard").FindAction("MyEscape");
+
+        escape_keyboard = MyactionAsset.FindActionMap("XRI LeftHand").FindAction("Secondary");
         escape_keyboard.Enable();
         escape_keyboard.performed += SkipVideo;
 
