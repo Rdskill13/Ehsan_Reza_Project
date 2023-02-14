@@ -5322,7 +5322,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534797501}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: ad200dce7b685f546b05754c4a9268cb, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 07478df44de58114384f092859ff81d3, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 852896491}
@@ -9607,14 +9607,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051295702}
-  m_LocalRotation: {x: -0.691387, y: 0.72248465, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 11.09}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10.8}
   m_LocalScale: {x: 0.0019999996, y: 0.0019999996, z: 0.002}
   m_Children:
   - {fileID: 1455206924}
   m_Father: {fileID: 0}
   m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -87.48}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -13.889, y: 0.608}
@@ -12282,7 +12282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VRControllerOnboardingManager: {fileID: 1388474017}
   OnboardingFlowToRun: {fileID: 11400000, guid: d8566f7755143a848be3d6cec939c937, type: 2}
-  AutoStartAfterNSeconds: 17
+  AutoStartAfterNSeconds: 100
 --- !u!114 &1388474016
 MonoBehaviour:
   m_ObjectHideFlags: 0
