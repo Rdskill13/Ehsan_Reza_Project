@@ -107,7 +107,7 @@ public class Timer : MonoBehaviour
 
                 }
 
-               if (Time_Stay%10==0 && Time_Stay !=0)
+               if (Time_Stay%30==0 && Time_Stay !=0)
               {
                 
                 check_movement_head(8.0f);
