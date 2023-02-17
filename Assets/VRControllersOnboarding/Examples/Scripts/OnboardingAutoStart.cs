@@ -39,8 +39,8 @@ public class OnboardingAutoStart : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning($"Controllers not initialized, will try auto-start onboarding in {AutoStartAfterNSeconds} seconds. " +
-                          $"Please make sure controllers are on and visible in the scene.");
+               // Debug.LogWarning($"Controllers not initialized, will try auto-start onboarding in {AutoStartAfterNSeconds} seconds. " +
+                 //         $"Please make sure controllers are on and visible in the scene.");
             }
         } while (!onboardingWillStart);
         

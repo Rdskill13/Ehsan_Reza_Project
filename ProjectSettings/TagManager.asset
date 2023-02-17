@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - My_SceneManager
+  - all_3dmodel
   layers:
   - Default
   - TransparentFX
