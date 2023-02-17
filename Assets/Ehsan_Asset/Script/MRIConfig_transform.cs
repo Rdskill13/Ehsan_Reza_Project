@@ -81,8 +81,12 @@ public class MRIConfig_transform : BaseTeleportationInteractable
         }
         else
         {
-            teleportRequest.destinationPosition = m_TeleportAnchorTransform.position;
-            teleportRequest.destinationRotation = m_TeleportAnchorTransform.rotation;
+            // for discrete teleportation 
+            // teleportRequest.destinationPosition = m_TeleportAnchorTransform.position;
+            //teleportRequest.destinationRotation = m_TeleportAnchorTransform.rotation;
+
+            teleportRequest.destinationPosition = raycastHit.point;
+            teleportRequest.destinationRotation = raycastHit.transform.rotation;
 
         }
 

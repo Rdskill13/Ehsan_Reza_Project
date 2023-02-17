@@ -78,6 +78,7 @@ public class Timer : MonoBehaviour
 
 
 
+        label_Score.gameObject.SetActive(false);
         label_Score_2.gameObject.SetActive(false);
 
     }
@@ -96,10 +97,13 @@ public class Timer : MonoBehaviour
             {
                 if (this != null) //if this ball is not Destroyed, check this Condition (used when hand want to grab ball and there is no)
                 {
-                    label_time.gameObject.SetActive(true);
+
+                    activation_label(true);
+                    //label_time.gameObject.SetActive(true);
                     label_time.text = Time_Stay.ToString(); //update UI Label of Timer 
 
-                   
+
+                    label_Score.gameObject.SetActive (true);
 
                 }
 

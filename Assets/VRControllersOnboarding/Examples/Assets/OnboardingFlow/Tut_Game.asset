@@ -132,9 +132,8 @@ MonoBehaviour:
   - {fileID: -5947962064881831004}
   - {fileID: -6590050957482371541}
   - {fileID: -8361328535000101650}
-  - {fileID: 6552727624168670176}
   - {fileID: 5420814899526953034}
-  SkipOnboardingStep: {fileID: 6552727624168670176}
+  SkipOnboardingStep: {fileID: 0}
   SkipTrigger: {fileID: 11400000, guid: c65470834cf3f3c489319e3107138d59, type: 2}
 --- !u!114 &1433366251431256230
 MonoBehaviour:
@@ -176,23 +175,6 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 
     Variable: {fileID: 11400000, guid: e2f00620f20a4aa49a968ee10981e42e, type: 2}
---- !u!114 &6552727624168670176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf824d034eb84ee3a05b3c5622c0096d, type: 3}
-  m_Name: Skip
-  m_EditorClassIdentifier: 
-  Guidances:
-  - {fileID: 11400000, guid: 56b1c27a334864a4cbfd5f9ee4ac2b72, type: 2}
-  Rules:
-  - {fileID: 11400000, guid: 9816461ae84428a4587960b0e3597be8, type: 2}
-  ControllerButtonMappingSet: {fileID: 11400000, guid: a1a854b391e3ffd4fa24796db81cd2d6, type: 2}
 --- !u!114 &8815049168792737535
 MonoBehaviour:
   m_ObjectHideFlags: 0

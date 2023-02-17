@@ -15,6 +15,8 @@ public class VideoManager : MonoBehaviour
 
     [SerializeField]private Canvas Video_canvas;
     [SerializeField] private GameObject wholeWorld;
+
+    [SerializeField] private OnboardingAutoStart my_onBoadring; 
     
 
     private void Start()
@@ -32,6 +34,8 @@ public class VideoManager : MonoBehaviour
 
         wholeWorld.SetActive(false);
 
+        my_onBoadring.gameObject.SetActive(false);
+
     }
 
     private void MyVideo_loopPointReached(VideoPlayer source)
@@ -39,6 +43,7 @@ public class VideoManager : MonoBehaviour
         this.gameObject.SetActive(false);
         Video_canvas.gameObject.SetActive(false);
         wholeWorld.SetActive(true);
+        my_onBoadring.gameObject.SetActive(true);
     }
 
     private void SkipVideo(InputAction.CallbackContext obj)
@@ -46,6 +51,7 @@ public class VideoManager : MonoBehaviour
         this.gameObject.SetActive(false);
         Video_canvas.gameObject.SetActive(false);
         wholeWorld.SetActive(true);
+        my_onBoadring.gameObject.SetActive(true);
     }
 
     private void OnDisable()
