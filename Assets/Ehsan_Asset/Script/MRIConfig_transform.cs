@@ -33,9 +33,11 @@ public class MRIConfig_transform : BaseTeleportationInteractable
         set => m_TeleportAnchorTransform = value;
     }
 
-    /// <summary>
-    /// See <see cref="MonoBehaviour"/>.
-    /// </summary>
+    
+
+    private MakeCameraBlack my_cam;
+
+
     protected void OnValidate()
     {
         if (m_TeleportAnchorTransform == null)
@@ -48,6 +50,10 @@ public class MRIConfig_transform : BaseTeleportationInteractable
         base.Reset();
         m_TeleportAnchorTransform = transform;
     }
+
+
+
+
 
     /// <summary>
     /// Unity calls this when drawing gizmos.
@@ -78,6 +84,9 @@ public class MRIConfig_transform : BaseTeleportationInteractable
 
             MRAudio.Play();
 
+            //StartCoroutine(MakeCamera_Black());
+
+            //my_cam.call_coroutine();
         }
         else
         {
@@ -85,12 +94,14 @@ public class MRIConfig_transform : BaseTeleportationInteractable
             // teleportRequest.destinationPosition = m_TeleportAnchorTransform.position;
             //teleportRequest.destinationRotation = m_TeleportAnchorTransform.rotation;
 
-            teleportRequest.destinationPosition = raycastHit.point;
+            teleportRequest.destinationPosition = new Vector3 (raycastHit.point.x, 1.6f, raycastHit.point.z);
             teleportRequest.destinationRotation = raycastHit.transform.rotation;
 
 
-           // StartCoroutine(MakeCamera_Black());
+            // StartCoroutine(MakeCamera_Black());
+            //my_cam.call_coroutine();
 
+           
         }
 
 
@@ -127,10 +138,11 @@ public class MRIConfig_transform : BaseTeleportationInteractable
 
 
             Time_Stay++;
-            Debug.Log("Time staty:"+ Time_Stay);
-            yield return new WaitForSeconds(1.0f); //just wait 1.0f second.
+           // Debug.Log("Time staty:" + Time_Stay);
+            yield return new WaitForSeconds(0.1f); //just wait 1.0f second.
 
-            
+
+
         }
 
         State_Scene(true, MyScene);

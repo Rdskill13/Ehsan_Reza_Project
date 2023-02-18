@@ -11,6 +11,8 @@ public class TeleportationManager : MonoBehaviour
 
     private InputAction Myactivate;
 
+    private InputAction Myteleportating;
+
     [SerializeField]private TeleportationProvider MyteleportationProvider;
     // Start is called before the first frame update
 
@@ -18,6 +20,9 @@ public class TeleportationManager : MonoBehaviour
 
 
     [SerializeField] private GameObject MyTeleportationMain_placement;
+
+    [SerializeField] private GameObject my_3dScene;
+
     void Start()
     {
 
@@ -36,6 +41,8 @@ public class TeleportationManager : MonoBehaviour
 
 
 
+
+
         //InputAction Mycancel = MyactionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Cancel");
         //  InputAction Mycancel = MyactionAsset.FindActionMap("XRI RightHand").FindAction("Cancel");
 
@@ -48,7 +55,23 @@ public class TeleportationManager : MonoBehaviour
 
 
 
+
         Activate_Deactivate_teleportation(false);
+
+
+
+        Myteleportating = MyactionAsset.FindActionMap("XRI RightHand").FindAction("Select");
+
+        Myteleportating.Enable();
+
+        Myteleportating.performed += Myteleportating_performed;
+    }
+
+    private void Myteleportating_performed(InputAction.CallbackContext obj)
+    {
+        StartCoroutine(MakeCamera_Black());
+
+        
     }
 
     private void Update()
@@ -97,7 +120,7 @@ public class TeleportationManager : MonoBehaviour
             MyRayInteractor.enabled = true;
 
             _isActive = true;
-            Debug.Log("Teleport Activate!!");
+            //Debug.Log("Teleport Activate!!");
 
             Activate_Deactivate_teleportation(true);
         }
@@ -105,7 +128,7 @@ public class TeleportationManager : MonoBehaviour
         else
         {
             MyRayInteractor.enabled = false;
-            Debug.Log("Teleport DeActivate!!");
+            //Debug.Log("Teleport DeActivate!!");
 
 
             Activate_Deactivate_teleportation(false);
@@ -128,8 +151,48 @@ public class TeleportationManager : MonoBehaviour
         MyTeleportationMain_placement.gameObject.SetActive(state);
     }
 
+
+
+    public IEnumerator MakeCamera_Black()
+    {
+        double Time_Stay = 0; //Time that is takes to grab ball.
+        //GameObject MyScene = GameObject.FindGameObjectWithTag("all_3dmodel");
+
+
+        State_Scene(false, my_3dScene);
+
+        while (Time_Stay <= 2)
+        {
+
+
+
+
+
+
+
+            Time_Stay++;
+            //Debug.Log("Time staty:" + Time_Stay);
+            yield return new WaitForSeconds(0.05f); //just wait 1.0f second.
+
+
+
+        }
+
+        State_Scene(true, my_3dScene);
+
+    }
+
+    private void State_Scene(bool state, GameObject MyScene)
+    {
+
+
+        MyScene.SetActive(state);
+    }
+
     private void OnDisable()
     {
         Myactivate.performed -= OnTeleportActivate;
+
+        Myteleportating.performed -= Myteleportating_performed;
     }
 }
