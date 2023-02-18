@@ -6,6 +6,7 @@ TagManager:
   tags:
   - My_SceneManager
   - all_3dmodel
+  - RightController
   layers:
   - Default
   - TransparentFX

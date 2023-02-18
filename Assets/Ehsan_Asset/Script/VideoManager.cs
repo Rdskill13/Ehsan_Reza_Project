@@ -44,6 +44,8 @@ public class VideoManager : MonoBehaviour
         Video_canvas.gameObject.SetActive(false);
         wholeWorld.SetActive(true);
         my_onBoadring.gameObject.SetActive(true);
+
+        GameManager.my_state_game = GameManager.State_Game.Playing;
     }
 
     private void SkipVideo(InputAction.CallbackContext obj)
@@ -52,6 +54,8 @@ public class VideoManager : MonoBehaviour
         Video_canvas.gameObject.SetActive(false);
         wholeWorld.SetActive(true);
         my_onBoadring.gameObject.SetActive(true);
+
+        GameManager.my_state_game = GameManager.State_Game.Playing;
     }
 
     private void OnDisable()

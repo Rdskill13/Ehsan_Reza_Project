@@ -33,9 +33,9 @@ public class MRIConfig_transform : BaseTeleportationInteractable
         set => m_TeleportAnchorTransform = value;
     }
 
-    
 
-    private MakeCameraBlack my_cam;
+
+   // private XRInteractorLineVisual my_right_hand_lineVisual;
 
 
     protected void OnValidate()
@@ -76,6 +76,10 @@ public class MRIConfig_transform : BaseTeleportationInteractable
             return false;
 
 
+        //FindObjectOfType<XRInteractorLineVisual>().enabled = false;
+
+        GameObject.FindGameObjectWithTag("RightController").GetComponent<XRRayInteractor>().enabled = false;
+
         if (Under_MRI)
         {
             teleportRequest.destinationPosition = new Vector3 (MRI_Pos_Rot.position.x, 0.8f - Camera.main.transform.localPosition.y, MRI_Pos_Rot.position.z);
@@ -87,14 +91,25 @@ public class MRIConfig_transform : BaseTeleportationInteractable
             //StartCoroutine(MakeCamera_Black());
 
             //my_cam.call_coroutine();
+
+            GameManager.my_state_game = GameManager.State_Game.UnderMRI;
+
+
+
+            //GameObject.FindGameObjectWithTag("RightController").GetComponent<XRInteractorLineVisual>().enabled = false;
+
+            FindObjectOfType<ActionBasedSnapTurnProvider>().enabled = false;
         }
         else
         {
             // for discrete teleportation 
             // teleportRequest.destinationPosition = m_TeleportAnchorTransform.position;
             //teleportRequest.destinationRotation = m_TeleportAnchorTransform.rotation;
+            //teleportRequest.destinationPosition = raycastHit.point;
 
-            teleportRequest.destinationPosition = new Vector3 (raycastHit.point.x, 1.6f, raycastHit.point.z);
+            
+
+            teleportRequest.destinationPosition = new Vector3 (raycastHit.point.x, 1.5f - Camera.main.transform.localPosition.y, raycastHit.point.z);
             teleportRequest.destinationRotation = raycastHit.transform.rotation;
 
 

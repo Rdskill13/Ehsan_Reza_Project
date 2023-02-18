@@ -19,21 +19,24 @@ public class Hide_UnHide_Setting : MonoBehaviour
 
     private void hide_unhide_menu(InputAction.CallbackContext context)
     {
-        if (my_panel ==null)
+        if (GameManager.my_state_game == GameManager.State_Game.Playing)
         {
-            return;
-        }
+            if (my_panel == null)
+            {
+                return;
+            }
 
-        if (my_panel.activeInHierarchy)
-        {
-            my_panel.SetActive(false);
-        }
-        else
-        {
-            my_panel.SetActive(true);
+            if (my_panel.activeInHierarchy)
+            {
+                my_panel.SetActive(false);
+            }
+            else
+            {
+                my_panel.SetActive(true);
+
+            }
 
         }
-
 
     }
 }

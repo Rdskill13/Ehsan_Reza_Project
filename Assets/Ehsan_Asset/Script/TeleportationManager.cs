@@ -69,6 +69,7 @@ public class TeleportationManager : MonoBehaviour
 
     private void Myteleportating_performed(InputAction.CallbackContext obj)
     {
+        
         StartCoroutine(MakeCamera_Black());
 
         
@@ -114,28 +115,31 @@ public class TeleportationManager : MonoBehaviour
         //    return;
         //}
 
-        if (Myactivate.IsPressed())
+        if (GameManager.my_state_game == GameManager.State_Game.Playing)
         {
-            
-            MyRayInteractor.enabled = true;
 
-            _isActive = true;
-            //Debug.Log("Teleport Activate!!");
+            if (Myactivate.IsPressed())
+            {
 
-            Activate_Deactivate_teleportation(true);
+                MyRayInteractor.enabled = true;
+
+                _isActive = true;
+                //Debug.Log("Teleport Activate!!");
+
+                Activate_Deactivate_teleportation(true);
+            }
+
+            else
+            {
+                MyRayInteractor.enabled = false;
+                //Debug.Log("Teleport DeActivate!!");
+
+
+                Activate_Deactivate_teleportation(false);
+
+            }
+
         }
-
-        else
-        {
-            MyRayInteractor.enabled = false;
-            //Debug.Log("Teleport DeActivate!!");
-
-
-            Activate_Deactivate_teleportation(false);
-
-        }
-
-
 
     }
     private void OnTeleportCancle(InputAction.CallbackContext context)
