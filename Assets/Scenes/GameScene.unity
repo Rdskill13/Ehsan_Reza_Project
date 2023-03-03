@@ -574,6 +574,7 @@ GameObject:
   - component: {fileID: 29939388}
   - component: {fileID: 29939390}
   - component: {fileID: 29939389}
+  - component: {fileID: 29939391}
   m_Layer: 0
   m_Name: XR Origin (1)
   m_TagString: Untagged
@@ -654,6 +655,20 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.12
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &29939391
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29939385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -18130,6 +18145,7 @@ GameObject:
   - component: {fileID: 1167366449}
   - component: {fileID: 1167366448}
   - component: {fileID: 1167366450}
+  - component: {fileID: 1167366451}
   m_Layer: 0
   m_Name: 'Timer_Boundry '
   m_TagString: Untagged
@@ -18183,6 +18199,19 @@ MonoBehaviour:
   label_Score_2: {fileID: 1948865918}
   Pos_feedback: {fileID: 1107648779}
   Neg_feedback: {fileID: 392698202}
+--- !u!65 &1167366451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167366447}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5086799, y: 3.0869331, z: 2.7579947}
+  m_Center: {x: -0.39224076, y: 1.0434666, z: 0.39276984}
 --- !u!1 &1175159141 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1038230382355388, guid: af4b062efb6203a4a8a2e5738d37c450, type: 3}
@@ -26961,6 +26990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1721222092}
   - component: {fileID: 1715524326}
+  - component: {fileID: 1720737773}
   m_Layer: 0
   m_Name: mri_bed_LOD0
   m_TagString: Untagged
@@ -26968,6 +26998,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &1720737773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720737772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8365875, y: 0.9455763, z: 0.7149604}
+  m_Center: {x: -0.013743914, y: 0.51902217, z: 0.000000146037}
 --- !u!1 &1720737774
 GameObject:
   m_ObjectHideFlags: 0

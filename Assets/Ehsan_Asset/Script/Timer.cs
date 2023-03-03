@@ -185,7 +185,7 @@ public class Timer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Contains("XR Origin"))
+        if (other.gameObject.name.Contains("XR Origin") && Trigger_Room.inside_room_triggered == true)
 
         {
             //Debug.Log("Trigger enter!!!");
@@ -207,7 +207,11 @@ public class Timer : MonoBehaviour
 
         {
             activation_label(false);
-            StopCoroutine(record_timer_coroutine);
+
+            if (record_timer_coroutine!=null)
+            {
+                StopCoroutine(record_timer_coroutine);
+            } 
 
             make_active_deactive_Score_UI_center();
 
