@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
     {
         Watching_Movie,
         Playing,
-        UnderMRI
+        UnderMRI,
+        setting_in_game
     
     };
 

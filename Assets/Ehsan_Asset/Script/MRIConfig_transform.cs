@@ -72,6 +72,13 @@ public class MRIConfig_transform : BaseTeleportationInteractable
     /// <inheritdoc />
     protected override bool GenerateTeleportRequest(IXRInteractor interactor, RaycastHit raycastHit, ref TeleportRequest teleportRequest)
     {
+
+        if (GameManager.my_state_game == GameManager.State_Game.Playing)
+        {
+
+        
+
+
         if (m_TeleportAnchorTransform == null)
             return false;
 
@@ -122,6 +129,12 @@ public class MRIConfig_transform : BaseTeleportationInteractable
 
         MyteleportationMainPlacement.gameObject.SetActive(false);
         return true;
+
+        }
+        else
+        {
+            return false;
+        }
     }
 
     //protected override void OnSelectEntered(SelectEnterEventArgs args)

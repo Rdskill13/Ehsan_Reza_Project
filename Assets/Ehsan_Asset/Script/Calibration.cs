@@ -35,4 +35,9 @@ public class Calibration : MonoBehaviour
         XROrigin_transform.localPosition = new Vector3(XROrigin_transform.localPosition.x, 0.8f - camera_transform.localPosition.y, XROrigin_transform.localPosition.z);
         
     }
+
+    private void OnDestroy()
+    {
+        UnityEngine.XR.InputTracking.trackingAcquired -= InputTracking_trackingAcquired;
+    }
 }

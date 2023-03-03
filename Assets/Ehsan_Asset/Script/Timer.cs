@@ -87,6 +87,20 @@ public class Timer : MonoBehaviour
 
     public IEnumerator  Record_Timer() //Timer of pick up ball.
     {
+        uint Time_start = 0;
+
+        while (Time_start <= 20)
+        {
+
+
+            Time_start++;
+
+            yield return new WaitForSeconds(1.0f);
+
+        }
+
+
+
         
 
             double Time_Stay = My_init_time; //Time that is takes to grab ball.
@@ -174,7 +188,7 @@ public class Timer : MonoBehaviour
         if (other.gameObject.name.Contains("XR Origin"))
 
         {
-            Debug.Log("Trigger enter!!!");
+            //Debug.Log("Trigger enter!!!");
             activation_label(true);
 
 

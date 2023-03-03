@@ -23,6 +23,8 @@ public class TeleportationManager : MonoBehaviour
 
     [SerializeField] private GameObject my_3dScene;
 
+    [SerializeField] private GameObject teleport_rectile;
+
     void Start()
     {
 
@@ -69,8 +71,11 @@ public class TeleportationManager : MonoBehaviour
 
     private void Myteleportating_performed(InputAction.CallbackContext obj)
     {
+        if (GameManager.my_state_game == GameManager.State_Game.Playing)
+        {
+            StartCoroutine(MakeCamera_Black());
+        } 
         
-        StartCoroutine(MakeCamera_Black());
 
         
     }
@@ -106,7 +111,7 @@ public class TeleportationManager : MonoBehaviour
            
 
         }
-    
+
 
     private void OnTeleportActivate(InputAction.CallbackContext context)
     {
@@ -114,33 +119,44 @@ public class TeleportationManager : MonoBehaviour
         //{
         //    return;
         //}
-
-        if (GameManager.my_state_game == GameManager.State_Game.Playing)
+        if (GameManager.my_state_game == GameManager.State_Game.Playing || GameManager.my_state_game == GameManager.State_Game.setting_in_game)
         {
 
-            if (Myactivate.IsPressed())
+
+
+            if (GameManager.my_state_game == GameManager.State_Game.Playing)
             {
 
-                MyRayInteractor.enabled = true;
+                if (Myactivate.IsPressed())
+                {
 
-                _isActive = true;
-                //Debug.Log("Teleport Activate!!");
+                    MyRayInteractor.enabled = true;
 
-                Activate_Deactivate_teleportation(true);
+                    _isActive = true;
+                    //Debug.Log("Teleport Activate!!");
+
+                    Activate_Deactivate_teleportation(true);
+                }
+
+                else
+                {
+                    MyRayInteractor.enabled = false;
+                    //Debug.Log("Teleport DeActivate!!");
+
+
+                    Activate_Deactivate_teleportation(false);
+
+
+                    active_deactive_rectile(false);
+
+                }
+
+
             }
 
-            else
-            {
-                MyRayInteractor.enabled = false;
-                //Debug.Log("Teleport DeActivate!!");
-
-
-                Activate_Deactivate_teleportation(false);
-
-            }
+            
 
         }
-
     }
     private void OnTeleportCancle(InputAction.CallbackContext context)
     {
@@ -153,7 +169,16 @@ public class TeleportationManager : MonoBehaviour
     private void Activate_Deactivate_teleportation(bool state)
     {
         MyTeleportationMain_placement.gameObject.SetActive(state);
+
     }
+
+    private void active_deactive_rectile(bool state)
+    {
+        teleport_rectile.gameObject.SetActive(state);
+
+
+    }
+
 
 
 
