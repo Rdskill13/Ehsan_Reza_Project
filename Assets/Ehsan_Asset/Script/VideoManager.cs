@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.Video;
 
 public class VideoManager : MonoBehaviour
@@ -36,6 +37,9 @@ public class VideoManager : MonoBehaviour
 
         my_onBoadring.gameObject.SetActive(false);
 
+
+        FindObjectOfType<ContinuousMoveProviderBase>().enabled = false;
+
     }
 
     private void MyVideo_loopPointReached(VideoPlayer source)
@@ -46,6 +50,10 @@ public class VideoManager : MonoBehaviour
         my_onBoadring.gameObject.SetActive(true);
 
         GameManager.my_state_game = GameManager.State_Game.Playing;
+
+
+        FindObjectOfType<ContinuousMoveProviderBase>().enabled = true;
+
     }
 
     private void SkipVideo(InputAction.CallbackContext obj)
@@ -56,6 +64,9 @@ public class VideoManager : MonoBehaviour
         my_onBoadring.gameObject.SetActive(true);
 
         GameManager.my_state_game = GameManager.State_Game.Playing;
+
+        FindObjectOfType<ContinuousMoveProviderBase>().enabled = true;
+
     }
 
     private void OnDisable()

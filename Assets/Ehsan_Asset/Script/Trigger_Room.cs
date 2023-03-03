@@ -26,7 +26,7 @@ public class Trigger_Room : MonoBehaviour
 
         uint Time_start = 0;
 
-        while (Time_start <= 20)
+        while (Time_start <= 120)
         {
 
 

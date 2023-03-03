@@ -106,6 +106,7 @@ public class MRIConfig_transform : BaseTeleportationInteractable
             //GameObject.FindGameObjectWithTag("RightController").GetComponent<XRInteractorLineVisual>().enabled = false;
 
             FindObjectOfType<ActionBasedSnapTurnProvider>().enabled = false;
+            FindObjectOfType<ContinuousMoveProviderBase>().enabled = false;
         }
         else
         {
