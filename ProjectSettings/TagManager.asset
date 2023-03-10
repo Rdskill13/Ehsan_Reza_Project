@@ -7,6 +7,8 @@ TagManager:
   - My_SceneManager
   - all_3dmodel
   - RightController
+  - effect
+  - setting_menu
   layers:
   - Default
   - TransparentFX

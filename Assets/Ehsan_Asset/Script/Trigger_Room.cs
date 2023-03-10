@@ -7,16 +7,24 @@ public class Trigger_Room : MonoBehaviour
 
     [SerializeField]private GameObject Teleport_area_mri;
 
-    private short count_inside_trigger = 0;
+    private static short count_inside_trigger = 0;
 
     public static bool inside_room_triggered = false;
-    private void OnTriggerEnter(Collider other)
+
+    private void Start()
     {
+        count_inside_trigger = 0;
+    }
+
+    
+    private void OnTriggerStay(Collider other)
+    {
+        //Debug.Log("inside room triggered! before 1");
         count_inside_trigger++;
         if (count_inside_trigger == 1)
         {
 
-            //Debug.Log("inside room triggered!");
+           // Debug.Log("inside room triggered! 1");
             StartCoroutine(Record_Timer());
 
         }
@@ -28,7 +36,7 @@ public class Trigger_Room : MonoBehaviour
 
         uint Time_start = 0;
 
-        while (Time_start <= 120)
+        while (Time_start <= 5)
         {
 
 

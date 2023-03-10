@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.Video;
+using Sigtrap.VrTunnellingPro;
 
 public class VideoManager : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class VideoManager : MonoBehaviour
 
 
         FindObjectOfType<ContinuousMoveProviderBase>().enabled = false;
+        FindObjectOfType<Tunnelling>().enabled = false;
 
     }
 
@@ -54,6 +56,8 @@ public class VideoManager : MonoBehaviour
 
         FindObjectOfType<ContinuousMoveProviderBase>().enabled = true;
 
+        FindObjectOfType<Tunnelling>().enabled = true;
+
     }
 
     private void SkipVideo(InputAction.CallbackContext obj)
@@ -66,6 +70,8 @@ public class VideoManager : MonoBehaviour
         GameManager.my_state_game = GameManager.State_Game.Playing;
 
         FindObjectOfType<ContinuousMoveProviderBase>().enabled = true;
+
+        FindObjectOfType<Tunnelling>().enabled = true;
 
     }
 

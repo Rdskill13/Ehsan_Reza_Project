@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 //using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 
 public class Timer : MonoBehaviour
@@ -37,6 +38,12 @@ public class Timer : MonoBehaviour
 
     [SerializeField] private AudioSource Pos_feedback;
     [SerializeField] private AudioSource Neg_feedback;
+    [SerializeField] private AudioSource end_MRI;
+
+    private short count_inside_mri =0;
+
+     public GameObject Setting_ScreenSpace;
+    [SerializeField] private XRRayInteractor Right_controller_ray;
     private void Start()
     {
         label_time.gameObject.SetActive(false); //by default is must be DeActivate.
@@ -89,6 +96,7 @@ public class Timer : MonoBehaviour
     {
         uint Time_start = 0;
 
+        //120
         while (Time_start <= 20)
         {
 
@@ -185,10 +193,12 @@ public class Timer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Contains("XR Origin") && Trigger_Room.inside_room_triggered == true)
+        count_inside_mri++;
+        if (other.gameObject.name.Contains("XR Origin") && Trigger_Room.inside_room_triggered == true && count_inside_mri ==1)
 
         {
-            //Debug.Log("Trigger enter!!!");
+            
+            Debug.Log("Trigger enter!!! + name: " + other.gameObject.name);
             activation_label(true);
 
 
@@ -234,12 +244,15 @@ public class Timer : MonoBehaviour
         {
             head_movment_rot[0] = new Vector3(MyCamera.localEulerAngles.x, MyCamera.localEulerAngles.y, MyCamera.localEulerAngles.z);
 
+            head_movment_pos[0] = new Vector3(MyCamera.localPosition.x, MyCamera.localPosition.y, MyCamera.localPosition.z);
+
             is_first30 = !is_first30;
 
         }
         else
         {
             head_movment_rot[1] = new Vector3(MyCamera.localEulerAngles.x, MyCamera.localEulerAngles.y, MyCamera.localEulerAngles.z);
+            head_movment_pos[1] = new Vector3(MyCamera.localPosition.x, MyCamera.localPosition.y, MyCamera.localPosition.z);
 
             is_first30 = !is_first30;
 
@@ -266,17 +279,23 @@ public class Timer : MonoBehaviour
                 label_Score_2.text = "امتیاز:" + Score.ToString();
 
                 Activate_Posfeedback(true);
+
+                //Debug.Log("inside pos feedback");
             }
 
             else
             {
                 Activate_Negfeedback(true);
+
+                Debug.Log("inside neg feedback");
             }
 
         }
         else
         {
             Activate_Negfeedback(true);
+
+           // Debug.Log("inside neg2 feedback");
         }
 
 
@@ -346,8 +365,19 @@ public class Timer : MonoBehaviour
         }
         else
         {
+            
+
             label_Score_2.gameObject.SetActive(true);
             label_Score.gameObject.SetActive(false);
+
+            end_MRI.Play();
+
+
+           // if (!Setting_ScreenSpace.activeInHierarchy)
+           // {
+                Setting_ScreenSpace.SetActive(true);
+                Right_controller_ray.enabled = true;
+            //}
 
         }
 

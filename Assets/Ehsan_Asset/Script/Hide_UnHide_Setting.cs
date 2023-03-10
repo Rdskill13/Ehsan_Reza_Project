@@ -8,7 +8,7 @@ public class Hide_UnHide_Setting : MonoBehaviour
 {
     private InputAction my_primary_button;
     [SerializeField] private InputActionAsset MyactionAsset;
-    [SerializeField]private GameObject my_panel;
+    public GameObject my_panel;
 
 
 
@@ -25,7 +25,8 @@ public class Hide_UnHide_Setting : MonoBehaviour
 
     private void hide_unhide_menu(InputAction.CallbackContext context)
     {
-        if (GameManager.my_state_game == GameManager.State_Game.Playing || GameManager.my_state_game == GameManager.State_Game.setting_in_game)
+        if (GameManager.my_state_game == GameManager.State_Game.Playing || GameManager.my_state_game == GameManager.State_Game.setting_in_game ||
+            GameManager.my_state_game == GameManager.State_Game.UnderMRI)
         {
             if (my_panel == null)
             {

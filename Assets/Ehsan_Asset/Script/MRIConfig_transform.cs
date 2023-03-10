@@ -34,8 +34,15 @@ public class MRIConfig_transform : BaseTeleportationInteractable
     }
 
 
+    //[SerializeField]private RectTransform my_setting_menu;
 
-   // private XRInteractorLineVisual my_right_hand_lineVisual;
+    [SerializeField] private GameObject my_setting_menu_under_MRI;
+
+    [SerializeField] private GameObject my_setting;
+
+
+
+    // private XRInteractorLineVisual my_right_hand_lineVisual;
 
 
     protected void OnValidate()
@@ -87,29 +94,52 @@ public class MRIConfig_transform : BaseTeleportationInteractable
 
         GameObject.FindGameObjectWithTag("RightController").GetComponent<XRRayInteractor>().enabled = false;
 
-        if (Under_MRI)
-        {
-            teleportRequest.destinationPosition = new Vector3 (MRI_Pos_Rot.position.x, 0.8f - Camera.main.transform.localPosition.y, MRI_Pos_Rot.position.z);
+            if (Under_MRI)
+            {
+                teleportRequest.destinationPosition = new Vector3(MRI_Pos_Rot.position.x, 0.8f - Camera.main.transform.localPosition.y, MRI_Pos_Rot.position.z);
 
-            teleportRequest.destinationRotation = MRI_Pos_Rot.rotation;
+                teleportRequest.destinationRotation = MRI_Pos_Rot.rotation;
 
-            MRAudio.Play();
+                MRAudio.Play();
 
-            //StartCoroutine(MakeCamera_Black());
+                //StartCoroutine(MakeCamera_Black());
 
-            //my_cam.call_coroutine();
+                //my_cam.call_coroutine();
 
-            GameManager.my_state_game = GameManager.State_Game.UnderMRI;
+                GameManager.my_state_game = GameManager.State_Game.UnderMRI;
 
 
 
-            //GameObject.FindGameObjectWithTag("RightController").GetComponent<XRInteractorLineVisual>().enabled = false;
+                //GameObject.FindGameObjectWithTag("RightController").GetComponent<XRInteractorLineVisual>().enabled = false;
 
-            FindObjectOfType<ActionBasedSnapTurnProvider>().enabled = false;
-            FindObjectOfType<ContinuousMoveProviderBase>().enabled = false;
-        }
-        else
-        {
+                FindObjectOfType<ActionBasedSnapTurnProvider>().enabled = false;
+                FindObjectOfType<ContinuousMoveProviderBase>().enabled = false;
+
+
+
+                //my_setting_menu.localPosition = new Vector3(-0.546f, 0.856f, -0.087f);
+                //my_setting_menu.localEulerAngles = new Vector3(0.0f,-90f,0.0f);
+                //my_setting_menu.localScale = new Vector3(0.002f, 0.002f, 0.004f);
+
+                MainMenu_Manager my_menu = GameObject.FindGameObjectWithTag("My_SceneManager").GetComponent<MainMenu_Manager>();
+                my_menu.my_panel.SetActive(false);
+                my_menu.my_panel = my_setting_menu_under_MRI;
+
+               my_setting.SetActive(false);
+              //  my_setting = my_setting_menu_under_MRI;
+
+
+               Hide_UnHide_Setting my_menu_hide_unhide =  GameObject.FindGameObjectWithTag("RightController").GetComponent<Hide_UnHide_Setting>();
+                my_menu_hide_unhide.my_panel.SetActive(false);
+                my_menu_hide_unhide.my_panel = my_setting_menu_under_MRI;
+
+
+               Timer my_timer =  FindObjectOfType<Timer>();
+                my_timer.Setting_ScreenSpace = my_setting_menu_under_MRI;
+
+            }
+            else
+            {
             // for discrete teleportation 
             // teleportRequest.destinationPosition = m_TeleportAnchorTransform.position;
             //teleportRequest.destinationRotation = m_TeleportAnchorTransform.rotation;
