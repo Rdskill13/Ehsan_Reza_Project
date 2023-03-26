@@ -9,6 +9,7 @@ TagManager:
   - RightController
   - effect
   - setting_menu
+  - wall
   layers:
   - Default
   - TransparentFX

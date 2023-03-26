@@ -11214,7 +11214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_panel: {fileID: 1486220278}
-  MyRayInteractor: {fileID: 2120965095}
+  MyRayInteractor: {fileID: 0}
 --- !u!4 &476294265
 Transform:
   m_ObjectHideFlags: 0
@@ -20726,7 +20726,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &822984370
 MonoBehaviour:
@@ -27840,7 +27840,7 @@ MonoBehaviour:
   Neg_feedback: {fileID: 392698202}
   end_MRI: {fileID: 1656207028}
   Setting_ScreenSpace: {fileID: 1486220278}
-  Right_controller_ray: {fileID: 2120965095}
+  Right_controller_ray: {fileID: 0}
 --- !u!1 &1175159141 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1038230382355388, guid: af4b062efb6203a4a8a2e5738d37c450, type: 3}
@@ -37613,7 +37613,7 @@ RectTransform:
   m_Children:
   - {fileID: 294136433}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39427,7 +39427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1707894444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39491,7 +39491,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1711352870
 Animator:
@@ -48952,6 +48952,7 @@ GameObject:
   - component: {fileID: 2120965094}
   - component: {fileID: 2120965093}
   - component: {fileID: 2120965097}
+  - component: {fileID: 2120965098}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: RightController
@@ -48989,7 +48990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.0305
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 3
+  m_LineLength: 8
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -49520,7 +49521,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyactionAsset: {fileID: -944628639613478452, guid: 494a250f06f597940b4b7342ca452446, type: 3}
   my_panel: {fileID: 1486220278}
-  MyRayInteractor: {fileID: 2120965095}
+  MyRayInteractor: {fileID: 0}
+--- !u!114 &2120965098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120965091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe3278e38e235ad4bb3196e6427be2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2123005749
 GameObject:
   m_ObjectHideFlags: 0
@@ -59013,9 +59026,9 @@ GameObject:
   - component: {fileID: 1069174683111060616}
   - component: {fileID: 2064135085923715155}
   - component: {fileID: 3387747432237465212}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Box037
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64740,7 +64753,7 @@ GameObject:
   - component: {fileID: 7611727766109328412}
   m_Layer: 0
   m_Name: Box017
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

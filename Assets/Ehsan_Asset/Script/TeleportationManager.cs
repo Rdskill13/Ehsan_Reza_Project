@@ -25,6 +25,9 @@ public class TeleportationManager : MonoBehaviour
 
     [SerializeField] private GameObject teleport_rectile;
 
+
+   // private Detect_walls my_detection;
+
     void Start()
     {
 
@@ -67,6 +70,10 @@ public class TeleportationManager : MonoBehaviour
         Myteleportating.Enable();
 
         Myteleportating.performed += Myteleportating_performed;
+
+
+
+        //my_detection = GameObject.FindGameObjectWithTag("RightController").GetComponent<Detect_walls>();
     }
 
     private void Myteleportating_performed(InputAction.CallbackContext obj)
@@ -129,6 +136,8 @@ public class TeleportationManager : MonoBehaviour
 
                 if (Myactivate.IsPressed())
                 {
+                  //  if (!my_detection.detect_walls())
+                 //   { 
 
                     MyRayInteractor.enabled = true;
 
@@ -136,6 +145,8 @@ public class TeleportationManager : MonoBehaviour
                     //Debug.Log("Teleport Activate!!");
 
                     Activate_Deactivate_teleportation(true);
+
+                  //  }
                 }
 
                 else

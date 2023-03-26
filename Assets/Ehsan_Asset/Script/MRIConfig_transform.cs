@@ -80,6 +80,9 @@ public class MRIConfig_transform : BaseTeleportationInteractable
     protected override bool GenerateTeleportRequest(IXRInteractor interactor, RaycastHit raycastHit, ref TeleportRequest teleportRequest)
     {
 
+        
+
+
         if (GameManager.my_state_game == GameManager.State_Game.Playing)
         {
 
