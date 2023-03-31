@@ -34,7 +34,7 @@ public class Detect_walls : MonoBehaviour
 
         // Debug.DrawRay(transform.position, transform.forward, Color.blue);
         // Debug.DrawLine(transform.position, transform.forward, Color.blue);
-        if (Physics.Raycast(MyRay, out RaycastHit hitInfo, 3))
+        if (Physics.Raycast(MyRay, out RaycastHit hitInfo, 20))
         {
             // Debug.Log("inside raycast");
             // Debug.DrawRay(transform.position, transform.forward, Color.green);

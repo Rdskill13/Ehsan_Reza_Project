@@ -607,7 +607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29939385}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -13.68, y: 0.762, z: 13.105}
+  m_LocalPosition: {x: -13.68, y: 0.762, z: 12.735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1870968076}
@@ -657,7 +657,7 @@ CapsuleCollider:
   m_Radius: 0.12
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 0.762, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &29939391
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -671,7 +671,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 0.762, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &33563488
 GameObject:
   m_ObjectHideFlags: 0
@@ -5719,6 +5719,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1860493320}
     m_Modifications:
+    - target: {fileID: 1877917673208818, guid: 8daf3bca92a008b408b4697169b413fe, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
     - target: {fileID: 4232937548737296, guid: 8daf3bca92a008b408b4697169b413fe, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5927,6 +5931,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1860493320}
     m_Modifications:
+    - target: {fileID: 1362778253516522, guid: 7ae4e34c3ea60bc428dd4c47b424b253, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
     - target: {fileID: 4247293187738196, guid: 7ae4e34c3ea60bc428dd4c47b424b253, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10368,7 +10376,7 @@ GameObject:
   - component: {fileID: 430017442}
   m_Layer: 0
   m_Name: SM_chair (2)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11214,7 +11222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_panel: {fileID: 1486220278}
-  MyRayInteractor: {fileID: 0}
+  MyRayInteractor: {fileID: 2120965095}
 --- !u!4 &476294265
 Transform:
   m_ObjectHideFlags: 0
@@ -17022,7 +17030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9037884370851157184, guid: 8089de8a52d1542eb87701759768e901, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9037884370851157184, guid: 8089de8a52d1542eb87701759768e901, type: 3}
       propertyPath: m_AnchorMax.x
@@ -17549,6 +17557,10 @@ PrefabInstance:
     - target: {fileID: 1362778253516522, guid: 7ae4e34c3ea60bc428dd4c47b424b253, type: 3}
       propertyPath: m_Name
       value: clinic_cupboard (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362778253516522, guid: 7ae4e34c3ea60bc428dd4c47b424b253, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 4247293187738196, guid: 7ae4e34c3ea60bc428dd4c47b424b253, type: 3}
       propertyPath: m_RootOrder
@@ -20655,6 +20667,7 @@ GameObject:
   - component: {fileID: 822984368}
   - component: {fileID: 822984367}
   - component: {fileID: 822984370}
+  - component: {fileID: 822984371}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -20755,6 +20768,21 @@ MonoBehaviour:
   pointerTransformOverride: {fileID: 0}
   rightXRController: {fileID: 2120965096}
   leftXRController: {fileID: 376546632}
+--- !u!114 &822984371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822984366}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &826356272
 GameObject:
   m_ObjectHideFlags: 0
@@ -22393,6 +22421,10 @@ PrefabInstance:
     - target: {fileID: 1060043886818980, guid: f02e82f2b9ddcbd4591683afc3da171a, type: 3}
       propertyPath: m_Name
       value: SM_bed (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060043886818980, guid: f02e82f2b9ddcbd4591683afc3da171a, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 4366298674253894, guid: f02e82f2b9ddcbd4591683afc3da171a, type: 3}
       propertyPath: m_RootOrder
@@ -27840,7 +27872,7 @@ MonoBehaviour:
   Neg_feedback: {fileID: 392698202}
   end_MRI: {fileID: 1656207028}
   Setting_ScreenSpace: {fileID: 1486220278}
-  Right_controller_ray: {fileID: 0}
+  Right_controller_ray: {fileID: 2120965095}
 --- !u!1 &1175159141 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1038230382355388, guid: af4b062efb6203a4a8a2e5738d37c450, type: 3}
@@ -27943,6 +27975,10 @@ PrefabInstance:
     - target: {fileID: 1737924692339848, guid: fe4caf9ba37564c498ec4656d65468b7, type: 3}
       propertyPath: m_Name
       value: SM_catheter (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737924692339848, guid: fe4caf9ba37564c498ec4656d65468b7, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 4106627052095192, guid: fe4caf9ba37564c498ec4656d65468b7, type: 3}
       propertyPath: m_RootOrder
@@ -37449,6 +37485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1038230382355388, guid: af4b062efb6203a4a8a2e5738d37c450, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
     - target: {fileID: 4165978119127540, guid: af4b062efb6203a4a8a2e5738d37c450, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -41665,6 +41705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: truck (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1216554903040840, guid: 40c0694b0152189498e6a1e6810317ce, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
     - target: {fileID: 4012636897910770, guid: 40c0694b0152189498e6a1e6810317ce, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -43907,7 +43951,7 @@ GameObject:
   - component: {fileID: 1870933856}
   m_Layer: 0
   m_Name: SM_chair (3)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44698,7 +44742,7 @@ GameObject:
   - component: {fileID: 1897995277}
   m_Layer: 0
   m_Name: SM_chair (2)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45578,6 +45622,10 @@ PrefabInstance:
     - target: {fileID: 1038230382355388, guid: af4b062efb6203a4a8a2e5738d37c450, type: 3}
       propertyPath: m_Name
       value: chair (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038230382355388, guid: af4b062efb6203a4a8a2e5738d37c450, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 4165978119127540, guid: af4b062efb6203a4a8a2e5738d37c450, type: 3}
       propertyPath: m_RootOrder
@@ -47650,6 +47698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: clinic_cupboard (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1362778253516522, guid: 7ae4e34c3ea60bc428dd4c47b424b253, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
     - target: {fileID: 4247293187738196, guid: 7ae4e34c3ea60bc428dd4c47b424b253, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -49304,7 +49356,7 @@ MonoBehaviour:
   m_MaxRaycastDistance: 30
   m_RayOriginTransform: {fileID: 0}
   m_ReferenceFrame: {fileID: 0}
-  m_Velocity: 5
+  m_Velocity: 10
   m_Acceleration: 1
   m_AdditionalGroundHeight: 0.1
   m_AdditionalFlightTime: 0.5
@@ -49521,7 +49573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyactionAsset: {fileID: -944628639613478452, guid: 494a250f06f597940b4b7342ca452446, type: 3}
   my_panel: {fileID: 1486220278}
-  MyRayInteractor: {fileID: 0}
+  MyRayInteractor: {fileID: 2120965095}
 --- !u!114 &2120965098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50286,7 +50338,7 @@ GameObject:
   - component: {fileID: 4612394988418886}
   m_Layer: 0
   m_Name: SM_curbstone
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50417,7 +50469,7 @@ GameObject:
   - component: {fileID: 64769841906603771}
   m_Layer: 0
   m_Name: SM_Monitor_3 (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50434,7 +50486,7 @@ GameObject:
   - component: {fileID: 64769841220230799}
   m_Layer: 0
   m_Name: SM_Monitor_3 (2)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50451,7 +50503,7 @@ GameObject:
   - component: {fileID: 64769840605100904}
   m_Layer: 0
   m_Name: SM_Monitor_3 (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50468,7 +50520,7 @@ GameObject:
   - component: {fileID: 64769839999523998}
   m_Layer: 0
   m_Name: SM_Monitor_3 (3)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50484,7 +50536,7 @@ GameObject:
   - component: {fileID: 4465340628001304}
   m_Layer: 0
   m_Name: SM_Mouse (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50500,7 +50552,7 @@ GameObject:
   - component: {fileID: 4465342181457277}
   m_Layer: 0
   m_Name: SM_Mouse (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50552,7 +50604,7 @@ GameObject:
   - component: {fileID: 64374991556207488}
   m_Layer: 0
   m_Name: SM_curbstone (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50622,7 +50674,7 @@ GameObject:
   - component: {fileID: 64919164694316468}
   m_Layer: 0
   m_Name: SM_shelf
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50690,7 +50742,7 @@ GameObject:
   - component: {fileID: 23158340232613122}
   m_Layer: 0
   m_Name: SM_curbstone_LOD0
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50708,7 +50760,7 @@ GameObject:
   - component: {fileID: 23570099605870054}
   m_Layer: 0
   m_Name: UCX_SM_curbstone_LOD0
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50776,7 +50828,7 @@ GameObject:
   - component: {fileID: 64170035190720488}
   m_Layer: 0
   m_Name: SK_table (3)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50794,7 +50846,7 @@ GameObject:
   - component: {fileID: 64170036465868669}
   m_Layer: 0
   m_Name: SK_table (4)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50864,7 +50916,7 @@ GameObject:
   - component: {fileID: 64930063373925986}
   m_Layer: 0
   m_Name: SM_shelf (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50881,7 +50933,7 @@ GameObject:
   - component: {fileID: 64469336793020201}
   m_Layer: 0
   m_Name: SM_Keyboard (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50898,7 +50950,7 @@ GameObject:
   - component: {fileID: 64469336585203169}
   m_Layer: 0
   m_Name: SM_Keyboard (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51070,7 +51122,7 @@ GameObject:
   - component: {fileID: 1685189427520217}
   m_Layer: 0
   m_Name: table_LOD0
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51101,7 +51153,7 @@ GameObject:
   - component: {fileID: 1685189494643278}
   m_Layer: 0
   m_Name: table_LOD0
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51130,7 +51182,7 @@ GameObject:
   - component: {fileID: 4491450471768906}
   m_Layer: 0
   m_Name: Arturmatur_table
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51146,7 +51198,7 @@ GameObject:
   - component: {fileID: 4491450001955807}
   m_Layer: 0
   m_Name: Arturmatur_table
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51282,7 +51334,7 @@ GameObject:
   - component: {fileID: 64912083941315946}
   m_Layer: 0
   m_Name: SM_shelf (2)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51553,7 +51605,7 @@ GameObject:
   - component: {fileID: 137065222870076717}
   m_Layer: 0
   m_Name: UCX_table
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51570,7 +51622,7 @@ GameObject:
   - component: {fileID: 137065224413574584}
   m_Layer: 0
   m_Name: UCX_table
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
