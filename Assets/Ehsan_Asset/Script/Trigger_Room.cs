@@ -36,7 +36,8 @@ public class Trigger_Room : MonoBehaviour
 
         uint Time_start = 0;
 
-        while (Time_start <= 5)
+        //Time that is must search inside room
+        while (Time_start <= 120)
         {
 
 

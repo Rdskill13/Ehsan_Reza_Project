@@ -198,7 +198,7 @@ public class Timer : MonoBehaviour
 
         {
             
-            Debug.Log("Trigger enter!!! + name: " + other.gameObject.name);
+           // Debug.Log("Trigger enter!!! + name: " + other.gameObject.name);
             activation_label(true);
 
 

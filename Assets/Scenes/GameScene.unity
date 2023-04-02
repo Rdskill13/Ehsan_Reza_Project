@@ -27863,7 +27863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c59f070c12d20c408b60377841fc7e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  My_FinalTime: 60
+  My_FinalTime: 300
   label_time: {fileID: 918010018}
   MyCamera: {fileID: 543262658}
   label_Score: {fileID: 1245775238}
