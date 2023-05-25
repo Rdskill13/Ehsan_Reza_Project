@@ -18,9 +18,10 @@ public class VideoManager : MonoBehaviour
     [SerializeField]private Canvas Video_canvas;
     [SerializeField] private GameObject wholeWorld;
 
-    [SerializeField] private OnboardingAutoStart my_onBoadring; 
-    
+    [SerializeField] private OnboardingAutoStart my_onBoadring;
 
+
+    [SerializeField] private AudioSource voice_entering_mr;
     private void Start()
     {
 
@@ -42,6 +43,8 @@ public class VideoManager : MonoBehaviour
         FindObjectOfType<ContinuousMoveProviderBase>().enabled = false;
         FindObjectOfType<Tunnelling>().enabled = false;
 
+
+
     }
 
     private void MyVideo_loopPointReached(VideoPlayer source)
@@ -58,6 +61,8 @@ public class VideoManager : MonoBehaviour
 
         FindObjectOfType<Tunnelling>().enabled = true;
 
+        play_sound(voice_entering_mr);
+
     }
 
     private void SkipVideo(InputAction.CallbackContext obj)
@@ -73,11 +78,18 @@ public class VideoManager : MonoBehaviour
 
         FindObjectOfType<Tunnelling>().enabled = true;
 
+        play_sound(voice_entering_mr);
+
     }
 
     private void OnDisable()
     {
         myVideo.loopPointReached -= MyVideo_loopPointReached;
         escape_keyboard.performed -= SkipVideo;
+    }
+
+    private void play_sound(AudioSource my_audio_2)
+    {
+        my_audio_2.Play();
     }
 }

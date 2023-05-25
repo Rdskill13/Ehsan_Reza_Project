@@ -39,6 +39,8 @@ public class Timer : MonoBehaviour
     [SerializeField] private AudioSource Pos_feedback;
     [SerializeField] private AudioSource Neg_feedback;
     [SerializeField] private AudioSource end_MRI;
+    [SerializeField] private AudioSource Voice_entering_mr;
+    [SerializeField] private AudioSource sound_MRI;
 
     private short count_inside_mri =0;
 
@@ -97,7 +99,7 @@ public class Timer : MonoBehaviour
         uint Time_start = 0;
 
         //120
-        while (Time_start <= 20)
+        while (Time_start <= 55)
         {
 
 
@@ -109,7 +111,7 @@ public class Timer : MonoBehaviour
 
 
 
-        
+            play_sound(sound_MRI);
 
             double Time_Stay = My_init_time; //Time that is takes to grab ball.
 
@@ -204,6 +206,9 @@ public class Timer : MonoBehaviour
 
 
             record_timer_coroutine = StartCoroutine(Record_Timer());
+
+            play_sound(Voice_entering_mr);
+
 
         }
 
@@ -370,7 +375,9 @@ public class Timer : MonoBehaviour
             label_Score_2.gameObject.SetActive(true);
             label_Score.gameObject.SetActive(false);
 
-            end_MRI.Play();
+           
+            play_sound(end_MRI);
+            stop_sound(sound_MRI);
 
 
            // if (!Setting_ScreenSpace.activeInHierarchy)
@@ -546,4 +553,20 @@ public class Timer : MonoBehaviour
 
     //    Debug.Log("Mouse Dragged " + this.gameObject.name);
     //}
+
+    private void play_sound(AudioSource my_audio)
+    { 
+        my_audio.Play();
+    
+    }
+
+    private void stop_sound(AudioSource my_audio)
+    {
+        if (my_audio.isPlaying)
+        {
+            my_audio.Stop();
+        }
+    
+    
+    }
 }

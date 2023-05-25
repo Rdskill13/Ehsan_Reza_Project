@@ -103,7 +103,7 @@ public class MRIConfig_transform : BaseTeleportationInteractable
 
                 teleportRequest.destinationRotation = MRI_Pos_Rot.rotation;
 
-                MRAudio.Play();
+               // MRAudio.Play();
 
                 //StartCoroutine(MakeCamera_Black());
 

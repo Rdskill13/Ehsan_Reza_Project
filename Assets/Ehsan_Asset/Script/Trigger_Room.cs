@@ -11,6 +11,8 @@ public class Trigger_Room : MonoBehaviour
 
     public static bool inside_room_triggered = false;
 
+   // [SerializeField] private AudioSource voice_entering_mr;
+
     private void Start()
     {
         count_inside_trigger = 0;
@@ -26,6 +28,8 @@ public class Trigger_Room : MonoBehaviour
 
            // Debug.Log("inside room triggered! 1");
             StartCoroutine(Record_Timer());
+
+            //play_sound(voice_entering_mr);
 
         }
     }
@@ -54,4 +58,9 @@ public class Trigger_Room : MonoBehaviour
 
 
     }
+
+    //private void play_sound(AudioSource my_audio_2)
+    //{
+    //    my_audio_2.Play();
+    //}
 }
