@@ -38,9 +38,20 @@ public class MainMenu_Manager : MonoBehaviour
 
         my_panel.SetActive(false);
         MyRayInteractor.enabled = false;
-        GameManager.my_state_game = GameManager.State_Game.Playing;
 
-        Activate_Turn_Movement();
+
+        if (GameManager.my_state_game == GameManager.State_Game.setting_in_game)
+        {
+            GameManager.my_state_game = GameManager.State_Game.Playing;
+
+            Activate_Turn_Movement();
+        }
+
+        else
+        {
+            GameManager.my_state_game = GameManager.State_Game.UnderMRI;
+        }
+        
     }
 
     private void Activate_Turn_Movement()

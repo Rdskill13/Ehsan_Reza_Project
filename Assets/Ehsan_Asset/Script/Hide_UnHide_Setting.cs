@@ -72,7 +72,7 @@ public class Hide_UnHide_Setting : MonoBehaviour
                 my_panel.SetActive(false);
 
 
-                GameManager.my_state_game = GameManager.State_Game.Playing;
+                GameManager.my_state_game = GameManager.State_Game.UnderMRI;
 
                 MyRayInteractor.enabled = false;
 
@@ -83,7 +83,7 @@ public class Hide_UnHide_Setting : MonoBehaviour
             {
                 my_panel.SetActive(true);
 
-                GameManager.my_state_game = GameManager.State_Game.setting_in_game;
+                GameManager.my_state_game = GameManager.State_Game.UnderMRI;
 
 
                 MyRayInteractor.enabled = true;
