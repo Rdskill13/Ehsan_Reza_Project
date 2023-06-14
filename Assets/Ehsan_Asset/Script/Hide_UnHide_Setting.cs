@@ -14,6 +14,10 @@ public class Hide_UnHide_Setting : MonoBehaviour
 
     [SerializeField] private XRRayInteractor MyRayInteractor;
 
+
+    [SerializeField] private ContinuousMoveProviderBase MyContinuousMoveProvider;
+    [SerializeField] private SnapTurnProviderBase MySnapTurnProvider;
+
     private void Start()
     {
         my_primary_button = MyactionAsset.FindActionMap("XRI RightHand").FindAction("Primary");
@@ -42,7 +46,8 @@ public class Hide_UnHide_Setting : MonoBehaviour
 
                 MyRayInteractor.enabled = false;
 
-
+                
+                Activate_Turn_Movement();
             }
             else
             {
@@ -52,9 +57,31 @@ public class Hide_UnHide_Setting : MonoBehaviour
 
 
                 MyRayInteractor.enabled = true;
+
+
+                Deactivate_Turn_Movement();
+
+
             }
 
         }
+
+    }
+
+
+
+    private void Deactivate_Turn_Movement()
+    {
+        MyContinuousMoveProvider.enabled = false;
+
+        MySnapTurnProvider.enabled  = false;
+    }
+
+    private void Activate_Turn_Movement()
+    {
+        MyContinuousMoveProvider.enabled = true;
+
+        MySnapTurnProvider.enabled = true;
 
     }
 }

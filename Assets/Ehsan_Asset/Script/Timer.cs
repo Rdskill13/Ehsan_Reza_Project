@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using TMPro;
 //using UnityEditorInternal;
 using UnityEngine;
@@ -14,6 +15,8 @@ public class Timer : MonoBehaviour
     
     [SerializeField]private double My_FinalTime=300;
     private double My_init_time = 0;
+
+    [SerializeField] private int my_timer_inside_mri_activation = 55;
 
     [SerializeField] private TextMeshProUGUI label_time;
 
@@ -99,7 +102,8 @@ public class Timer : MonoBehaviour
         uint Time_start = 0;
 
         //120
-        while (Time_start <= 55)
+        //55
+        while (Time_start <= my_timer_inside_mri_activation)
         {
 
 
@@ -331,7 +335,7 @@ public class Timer : MonoBehaviour
 
 
 
-        while (Time_Stay <= 5)
+        while (Time_Stay <= 2)
         {
 
 
@@ -380,10 +384,11 @@ public class Timer : MonoBehaviour
             stop_sound(sound_MRI);
 
 
+            StartCoroutine(My_DelayedCallback_activate_setting(end_MRI.clip.length));
+
            // if (!Setting_ScreenSpace.activeInHierarchy)
            // {
-                Setting_ScreenSpace.SetActive(true);
-                Right_controller_ray.enabled = true;
+                
             //}
 
         }
@@ -557,7 +562,10 @@ public class Timer : MonoBehaviour
     private void play_sound(AudioSource my_audio)
     { 
         my_audio.Play();
-    
+
+       
+
+
     }
 
     private void stop_sound(AudioSource my_audio)
@@ -568,5 +576,18 @@ public class Timer : MonoBehaviour
         }
     
     
+    }
+
+
+
+    private IEnumerator My_DelayedCallback_activate_setting(float time )
+    { 
+    
+        yield return new WaitForSeconds(time);
+
+
+
+        Setting_ScreenSpace.SetActive(true);
+        Right_controller_ray.enabled = true;
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Trigger_Room : MonoBehaviour
 {
+    //120
+    [SerializeField] private int timer_activation_arrow = 120;
 
     [SerializeField]private GameObject Teleport_area_mri;
 
@@ -41,7 +43,7 @@ public class Trigger_Room : MonoBehaviour
         uint Time_start = 0;
 
         //Time that is must search inside room
-        while (Time_start <= 120)
+        while (Time_start <= timer_activation_arrow)
         {
 
 

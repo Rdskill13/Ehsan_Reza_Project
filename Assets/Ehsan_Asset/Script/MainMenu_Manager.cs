@@ -8,6 +8,8 @@ public class MainMenu_Manager : MonoBehaviour
 {
      public GameObject my_panel;
     [SerializeField] private XRRayInteractor MyRayInteractor;
+    [SerializeField] private SnapTurnProviderBase my_snap_turn;
+    [SerializeField] private ContinuousMoveProviderBase my_continuous_move;
 
 
     public void enter_MainGame()
@@ -37,5 +39,15 @@ public class MainMenu_Manager : MonoBehaviour
         my_panel.SetActive(false);
         MyRayInteractor.enabled = false;
         GameManager.my_state_game = GameManager.State_Game.Playing;
+
+        Activate_Turn_Movement();
+    }
+
+    private void Activate_Turn_Movement()
+    {
+        my_continuous_move.enabled = true;
+
+        my_snap_turn.enabled = true;
+
     }
 }
