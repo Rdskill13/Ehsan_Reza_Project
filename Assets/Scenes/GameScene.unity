@@ -17779,7 +17779,7 @@ MonoBehaviour:
   Pos_feedback: {fileID: 1107648779}
   Neg_feedback: {fileID: 392698202}
   end_MRI: {fileID: 531413477}
-  Voice_entering_mr: {fileID: 274651551}
+  Voice_entering_mr: {fileID: 712583005}
   sound_MRI: {fileID: 838644393}
   Setting_ScreenSpace: {fileID: 1486220278}
   Right_controller_ray: {fileID: 2120965095}
