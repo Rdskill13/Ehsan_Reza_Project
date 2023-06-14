@@ -41,7 +41,7 @@ public class VideoManager : MonoBehaviour
 
 
         FindObjectOfType<ContinuousMoveProviderBase>().enabled = false;
-        FindObjectOfType<ContinuousTurnProviderBase>().enabled = false;
+        FindObjectOfType<SnapTurnProviderBase>().enabled = false;
         FindObjectOfType<Tunnelling>().enabled = false;
 
 
@@ -59,7 +59,7 @@ public class VideoManager : MonoBehaviour
 
 
         FindObjectOfType<ContinuousMoveProviderBase>().enabled = true;
-        FindObjectOfType<ContinuousTurnProviderBase>().enabled = true;
+        FindObjectOfType<SnapTurnProviderBase>().enabled = true;
 
 
         FindObjectOfType<Tunnelling>().enabled = true;
@@ -78,7 +78,7 @@ public class VideoManager : MonoBehaviour
         GameManager.my_state_game = GameManager.State_Game.Playing;
 
         FindObjectOfType<ContinuousMoveProviderBase>().enabled = true;
-        FindObjectOfType<ContinuousTurnProviderBase>().enabled = true;
+        FindObjectOfType<SnapTurnProviderBase>().enabled = true;
 
         FindObjectOfType<Tunnelling>().enabled = true;
 
