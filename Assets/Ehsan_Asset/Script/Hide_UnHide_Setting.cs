@@ -29,8 +29,7 @@ public class Hide_UnHide_Setting : MonoBehaviour
 
     private void hide_unhide_menu(InputAction.CallbackContext context)
     {
-        if (GameManager.my_state_game == GameManager.State_Game.Playing || GameManager.my_state_game == GameManager.State_Game.setting_in_game ||
-            GameManager.my_state_game == GameManager.State_Game.UnderMRI)
+        if (GameManager.my_state_game == GameManager.State_Game.Playing || GameManager.my_state_game == GameManager.State_Game.setting_in_game )
         {
             if (my_panel == null)
             {
@@ -66,6 +65,36 @@ public class Hide_UnHide_Setting : MonoBehaviour
 
         }
 
+      else  if (GameManager.my_state_game == GameManager.State_Game.UnderMRI)
+        {
+            if (my_panel.activeInHierarchy)
+            {
+                my_panel.SetActive(false);
+
+
+                GameManager.my_state_game = GameManager.State_Game.Playing;
+
+                MyRayInteractor.enabled = false;
+
+
+               
+            }
+            else
+            {
+                my_panel.SetActive(true);
+
+                GameManager.my_state_game = GameManager.State_Game.setting_in_game;
+
+
+                MyRayInteractor.enabled = true;
+
+
+               
+
+            }
+
+
+        }
     }
 
 
