@@ -96,6 +96,10 @@ public class Timer : MonoBehaviour
         label_Score.gameObject.SetActive(false);
         label_Score_2.gameObject.SetActive(false);
 
+
+
+        
+
     }
 
 
@@ -287,8 +291,8 @@ public class Timer : MonoBehaviour
 
                 Score++;
 
-                label_Score.text = "امتیاز:" + Score.ToString();
-                label_Score_2.text = "امتیاز:" + Score.ToString();
+                label_Score.text = "Score:" + Score.ToString();
+                label_Score_2.text = "Score:" + Score.ToString();
 
                 Activate_Posfeedback(true);
 

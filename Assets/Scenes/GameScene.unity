@@ -3839,7 +3839,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2377e2bf1cf332a459b221534f12c5d5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4be7f2ffd94d55d428e8df2e4dcf9bbc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8372,7 +8372,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ed8f27fda8162ca44be23b64941df8b7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f511a30c7cd050048a9a6dda2db52119, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8522,7 +8522,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534797501}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 5aa240143620ba5419628b269963c463, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 07478df44de58114384f092859ff81d3, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 852896491}
@@ -11498,7 +11498,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 351b552b048baff419ec6afebd523d5a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ba0e1d65e945f1f429b262110ca2898c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -16096,7 +16096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c60df8602b22a24bb7825925b4f7137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer_activation_arrow: 5
+  timer_activation_arrow: 120
   Teleport_area_mri: {fileID: 663973522}
 --- !u!1 &1035085899
 GameObject:
@@ -17506,7 +17506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c60df8602b22a24bb7825925b4f7137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer_activation_arrow: 5
+  timer_activation_arrow: 120
   Teleport_area_mri: {fileID: 663973522}
 --- !u!65 &1131532370
 BoxCollider:
@@ -17770,8 +17770,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c59f070c12d20c408b60377841fc7e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  My_FinalTime: 30
-  my_timer_inside_mri_activation: 5
+  My_FinalTime: 300
+  my_timer_inside_mri_activation: 60
   label_time: {fileID: 918010018}
   MyCamera: {fileID: 543262658}
   label_Score: {fileID: 1245775238}
@@ -37595,6 +37595,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2635402455882287428, guid: 6c57d2b33aeddef488d3a425d9e3e922, type: 3}
+      propertyPath: m_text
+      value: Score:0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635402455882287428, guid: 6c57d2b33aeddef488d3a425d9e3e922, type: 3}
+      propertyPath: originalText
+      value: Score:0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635402455882287428, guid: 6c57d2b33aeddef488d3a425d9e3e922, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2635402455987013587, guid: 6c57d2b33aeddef488d3a425d9e3e922, type: 3}
       propertyPath: MySnapTurnProvider
       value: 
@@ -37642,6 +37654,18 @@ PrefabInstance:
     - target: {fileID: 2635402456051383603, guid: 6c57d2b33aeddef488d3a425d9e3e922, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635402456190032316, guid: 6c57d2b33aeddef488d3a425d9e3e922, type: 3}
+      propertyPath: m_text
+      value: Score:0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635402456190032316, guid: 6c57d2b33aeddef488d3a425d9e3e922, type: 3}
+      propertyPath: originalText
+      value: Score:0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635402456190032316, guid: 6c57d2b33aeddef488d3a425d9e3e922, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2635402456198323484, guid: 6c57d2b33aeddef488d3a425d9e3e922, type: 3}
       propertyPath: m_AnchorMax.y

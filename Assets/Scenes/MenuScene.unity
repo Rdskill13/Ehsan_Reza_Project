@@ -2638,8 +2638,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uFEB7\uFEAE\uFEED\uFEC9 \uFE91\uFE8E\uFEAF\uFBFC"
-  m_isRightToLeft: 1
+  m_text: Start Game
+  m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 612ac84788302f844bd35487219f0862, type: 2}
   m_sharedMaterial: {fileID: 8399260439746791273, guid: 612ac84788302f844bd35487219f0862, type: 2}
   m_fontSharedMaterials: []
@@ -2672,7 +2672,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2709,7 +2709,7 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
   preserveNumbers: 0
   farsi: 1
-  originalText: "\u0634\u0631\u0648\u0639 \u0628\u0627\u0632\u064A"
+  originalText: Start Game
   fixTags: 1
   forceFix: 0
 --- !u!222 &357058118
@@ -9189,8 +9189,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uFEA7\uFEAE\uFEED\uFE9D\n"
-  m_isRightToLeft: 1
+  m_text: Exit
+  m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 612ac84788302f844bd35487219f0862, type: 2}
   m_sharedMaterial: {fileID: 8399260439746791273, guid: 612ac84788302f844bd35487219f0862, type: 2}
   m_fontSharedMaterials: []
@@ -9223,7 +9223,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -9260,7 +9260,7 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
   preserveNumbers: 0
   farsi: 1
-  originalText: "\u062E\u0631\u0648\u062C\n"
+  originalText: Exit
   fixTags: 1
   forceFix: 0
 --- !u!222 &1184649745
