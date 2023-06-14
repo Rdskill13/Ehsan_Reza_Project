@@ -51,6 +51,9 @@ public class Timer : MonoBehaviour
     [SerializeField] private XRRayInteractor Right_controller_ray;
     private void Start()
     {
+
+        end_MRI.gameObject.SetActive(false);
+
         label_time.gameObject.SetActive(false); //by default is must be DeActivate.
 
 
@@ -379,8 +382,13 @@ public class Timer : MonoBehaviour
             label_Score_2.gameObject.SetActive(true);
             label_Score.gameObject.SetActive(false);
 
-           
+
+
+            end_MRI.gameObject.SetActive(true);
             play_sound(end_MRI);
+
+            
+
             stop_sound(sound_MRI);
 
 
@@ -586,7 +594,7 @@ public class Timer : MonoBehaviour
         yield return new WaitForSeconds(time);
 
 
-
+        end_MRI.gameObject.SetActive(false);
         Setting_ScreenSpace.SetActive(true);
         Right_controller_ray.enabled = true;
     }
