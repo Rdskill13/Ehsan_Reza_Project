@@ -9497,10 +9497,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uFE8D\uFEA9\uFE8D\uFEE3\uFEEA\n"
-  m_isRightToLeft: 1
-  m_fontAsset: {fileID: 11400000, guid: 612ac84788302f844bd35487219f0862, type: 2}
-  m_sharedMaterial: {fileID: 8399260439746791273, guid: 612ac84788302f844bd35487219f0862, type: 2}
+  m_text: Resume
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a6446991ef31ced4190c53c206cf4b3e, type: 2}
+  m_sharedMaterial: {fileID: -9221056233183343877, guid: a6446991ef31ced4190c53c206cf4b3e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9531,7 +9531,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -9568,7 +9568,7 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
   preserveNumbers: 0
   farsi: 1
-  originalText: "\u0627\u062F\u0627\u0645\u0647\n"
+  originalText: Resume
   fixTags: 1
   forceFix: 0
 --- !u!222 &609078850
@@ -26156,11 +26156,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uFE91\uFE8E\uFEAF\uFB94\uFEB8\uFE96 \uFE91\uFEEA \uFEE3\uFEE8\uFEEE\uFBFC
-    \uFE8D\uFEBB\uFEE0\uFBFD "
-  m_isRightToLeft: 1
-  m_fontAsset: {fileID: 11400000, guid: 612ac84788302f844bd35487219f0862, type: 2}
-  m_sharedMaterial: {fileID: 8399260439746791273, guid: 612ac84788302f844bd35487219f0862, type: 2}
+  m_text: Return To Main Menu
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a6446991ef31ced4190c53c206cf4b3e, type: 2}
+  m_sharedMaterial: {fileID: -9221056233183343877, guid: a6446991ef31ced4190c53c206cf4b3e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26191,7 +26190,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -26228,8 +26227,7 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
   preserveNumbers: 0
   farsi: 1
-  originalText: "\u0628\u0627\u0632\u06AF\u0634\u062A \u0628\u0647 \u0645\u0646\u0648\u064A
-    \u0627\u0635\u0644\u064A "
+  originalText: Return To Main Menu
   fixTags: 1
   forceFix: 0
 --- !u!222 &1870782794
